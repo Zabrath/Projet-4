@@ -8,28 +8,32 @@
     crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="CSS/index.css">
     <title>Oh my food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
 <body>
     
-    <header>
+    <header class="header">
         
-        <img src="Assets/logo/ohmyfood.png" alt="logo">
+        <img class="header__logo" src="Assets/logo/ohmyfood.png" alt="logo">
         
     </header>
     
     <main>
 
-        <section class="test">
-            <i class="fa-solid fa-location-dot"></i> <h2>Paris, Belleville</h2>
-        </section>
+        <div class="localisation">
+            <i class="fa-solid fa-location-dot"></i> 
+            <h2>Paris, Belleville</h2>
+        </div>
         
         
-        <section>
+        <section class="explorer">
 
-            <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-            <div>Explorer nos restaurants</div>
+            <h1 class="explorer__titre" >Réservez le menu qui vous convient</h1>
+            <p class="explorer__texte" >Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            <div class="explorer__bouton" >Explorer nos restaurants</div>
             
         </section>
         
@@ -40,19 +44,19 @@
             
             <article>
                 <div> 1 </div>
-                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span><i class="fa-solid fa-mobile-screen-button"></i></i></span>
                 <h3>choisissez un restaurant</h3>
             </article>
             
             <article>
                 <div> 2 </div>
-                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span><i class="fa-solid fa-list-ul"></i></i></span>
                 <h3>Composez votre menu</h3>
             </article>
             
             <article>
                 <div> 3 </div>
-                <span><i class="fa-solid fa-location-dot"></i></span>
+                <span><i class="fa-solid fa-store"></i></i></span>
                 <h3>Dégustez au restaurant</h3>
             </article>
         </section>

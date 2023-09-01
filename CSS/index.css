@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.header {
+    background: white;
+    height: 60px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo {
+
+    height: 30px;
+    margin: auto;
+}
+
+.localisation {
+    background: #eaeaea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.explorer {
+    background: whitesmoke;
+    padding: 10px 50px 50px 50px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.explorer__titre {
+
+    padding : 0px 15px 0px 15px ;
+
+}
+
+.explorer__texte {
+
+    padding: 0px 15px 25px 15px ;
+    
+}
+
+.explorer__bouton {
+
+    color: white;
+    padding: 15px 20px 15px 20px;
+    background: #ff79da;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    
+}
+
+
+
