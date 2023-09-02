@@ -10,6 +10,8 @@ a {
 }
 
 
+
+
 .header {
     background: white;
     height: 60px;
@@ -26,6 +28,8 @@ a {
     margin: auto;
 }
 
+
+
 .localisation {
     background: #eaeaea;
     display: flex;
@@ -33,6 +37,8 @@ a {
     justify-content: center;
     gap: 5px;
 }
+
+
 
 .explorer {
     background: whitesmoke;
@@ -69,3 +75,50 @@ a {
 
 
 
+
+.fonctionnement {
+
+padding-left: 35px;
+padding-right: 20px;
+
+}
+
+.fonctionnement__card {
+    background: #f6f6f6 ;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+    
+}
+
+.fonctionnement__numero {
+    background: #9356DC;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -14px;
+}
+
+.fonctionnement__icone {
+    font-size: 25px;
+    color: #7E7E7E;
+}
+
+.fa-store {
+    color: #9356DC;
+}
+
+
+
+.logo__footer {
+    font-family: 'Shrikhand', cursive;
+}
