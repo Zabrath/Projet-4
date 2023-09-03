@@ -23,7 +23,7 @@ a {
 }
 
 .header__logo {
-
+    
     height: 30px;
     margin: auto;
 }
@@ -50,19 +50,19 @@ a {
 }
 
 .explorer__titre {
-
+    
     padding : 0px 15px 0px 15px ;
-
+    
 }
 
 .explorer__texte {
-
+    
     padding: 0px 15px 25px 15px ;
     
 }
 
 .explorer__bouton {
-
+    
     color: white;
     padding: 15px 20px 15px 20px;
     background: #ff79da;
@@ -77,10 +77,17 @@ a {
 
 
 .fonctionnement {
+    
+    padding-left: 35px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+}
 
-padding-left: 35px;
-padding-right: 20px;
-
+.fonctionnement__titre {
+    
+    padding-bottom: 5px;
 }
 
 .fonctionnement__card {
@@ -116,6 +123,78 @@ padding-right: 20px;
 .fa-store {
     color: #9356DC;
 }
+
+
+
+
+.restaurants {
+    background: #f6f6f6;
+}
+
+.restaurants__titre {
+    font-weight: 800;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    padding-top: 70px;
+}
+
+.restaurants__card {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+.restaurants__vignette {
+    
+    width: 100%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 20px;
+    position: relative;
+    
+    
+}
+
+.restaurants__image {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    
+}
+
+.restaurants__nouveau {
+    
+    background: #99E2D0;
+    color: #008766 ;
+    font-weight: 600;
+    padding: 7px 15px;
+    border-radius: 5px;
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    
+    
+}
+
+.restaurants__texte {
+    padding-left: 25px;
+    position: relative;
+    
+}
+
+.coeur {
+    font-size: 24px;
+    position: absolute;
+    right: 25px;
+    bottom: 35px;
+    
+}
+
+
+
 
 
 
