@@ -7,42 +7,50 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 
-
+/** Ohmyfood top **/
 
 .header {
     background: white;
     height: 60px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    position: sticky;
-    top: 0;
     display: flex;
     align-items: center;
+    padding: 15px;
+    
 }
 
 .header__logo {
     
-    height: 30px;
+    height: 40px;
     margin: auto;
+    
 }
 
-
+/** Paris, belleville **/
 
 .localisation {
     background: #eaeaea;
+    font-size: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
+    color: #353535;
 }
 
+.localisation i {
+    font-size: 24px;
+    padding-right: 15px;
+}
 
+/** Réservez/explorer **/
 
 .explorer {
     background: whitesmoke;
-    padding: 10px 50px 50px 50px;
+    padding: 39px 50px 57px 50px;
     display: flex;
     text-align: center;
     flex-direction: column;
@@ -50,44 +58,67 @@ a {
 }
 
 .explorer__titre {
-    
-    padding : 0px 15px 0px 15px ;
+    margin: 0;
+    padding : 0px 15px 15px 15px ;
+    font-size: 24px;
+    font-weight: bold;
     
 }
 
 .explorer__texte {
-    
+    margin: 0;
     padding: 0px 15px 25px 15px ;
+    font-size: 18px;
+    font-weight: lighter;
+    font-weight: 300;
+    
     
 }
 
 .explorer__bouton {
     
     color: white;
-    padding: 15px 20px 15px 20px;
+    padding: 18px 22px 18px 22px;
     background: #ff79da;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
     margin: auto;
     border-radius: 30px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-size: 16px;
+    font-weight: normal;
     
 }
 
-
+/** Fonctionnement menu **/
 
 
 .fonctionnement {
-    
-    padding-left: 35px;
-    padding-right: 20px;
-    padding-bottom: 50px;
-    padding-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 68px;   
     
 }
 
 .fonctionnement__titre {
-    
-    padding-bottom: 5px;
+
+    padding-top: 24px;
+    padding-left: 20px;
+
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.fonctionnement__menu {
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+    padding-left: 35px;
+    padding-right: 55px;
+
+
+
 }
 
 .fonctionnement__card {
@@ -95,10 +126,10 @@ a {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    gap: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 30px;
+    gap: 20px;
+    padding: 10px 0;
+    
+    
     
 }
 
@@ -116,8 +147,9 @@ a {
 }
 
 .fonctionnement__icone {
-    font-size: 25px;
+    font-size: 14px;
     color: #7E7E7E;
+    font-size: 24px;
 }
 
 .fa-store {
@@ -125,10 +157,11 @@ a {
 }
 
 
-
+/** Restaurants en vignettes **/
 
 .restaurants {
     background: #f6f6f6;
+    padding-bottom: 90px;
 }
 
 .restaurants__titre {
@@ -179,25 +212,102 @@ a {
     
 }
 
+/** 
+
 .restaurants__texte {
-    padding-left: 25px;
+    padding-left: 15px;
     position: relative;
-    
 }
 
 .coeur {
     font-size: 24px;
     position: absolute;
     right: 25px;
-    bottom: 35px;
+    bottom: 28px;
+    
+    
+}
+
+.restaurants__nom {
+    margin-bottom: 5px;
+    
+}
+
+.restaurants__localisation {
+    
+    margin-top: 5px;
     
 }
 
 
+**/
 
 
 
+.restaurants__texte {
+    padding-left: 15px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;   
 
-.logo__footer {
+}
+
+.restaurants__infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
+.coeur {
+    font-size: 24px;
+    padding-right: 20px;
+}
+
+.restaurants__nom {
+    margin: 3px;
+    
+}
+
+.restaurants__localisation {
+    margin: 3px;
+}
+
+/** Footer menu **/
+
+.footer {
+    background-color: #353535;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__logo {
+    padding: 20px;
+    margin: 0;
+    color: white;
     font-family: 'Shrikhand', cursive;
+    font-weight: 100;
+}
+
+.footer__menu {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.footer__menu a {
+    color: white;
+}
+
+.footer__menu i {
+    padding-right: 10px;
+}
+
+.fa-handshake-angle {
+    font-size: 12px;
 }
