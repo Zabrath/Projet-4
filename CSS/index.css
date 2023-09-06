@@ -243,6 +243,14 @@ a {
 **/
 
 
+.restaurants__infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+}
+
 
 .restaurants__texte {
     padding-left: 15px;
@@ -253,13 +261,7 @@ a {
 
 }
 
-.restaurants__infos {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-items: center;
-    justify-content: space-between;
-}
+
 
 .coeur {
     font-size: 24px;
