@@ -2,6 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    padding-top: 90px;
     
 }
 
@@ -19,6 +20,11 @@ a {
     display: flex;
     align-items: center;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     
 }
 
@@ -115,7 +121,7 @@ a {
     gap: 25px;
 
     padding-left: 35px;
-    padding-right: 55px;
+    padding-right: 20px;
 
 
 
@@ -128,6 +134,7 @@ a {
     align-items: center;
     gap: 20px;
     padding: 10px 0;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
     
     
     
@@ -165,9 +172,10 @@ a {
 }
 
 .restaurants__titre {
+    font-size: 26px;
     font-weight: 800;
     padding-left: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     padding-top: 70px;
 }
 
@@ -191,7 +199,7 @@ a {
 }
 
 .restaurants__image {
-    height: 250px;
+    height: 180px;
     object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0 0;
@@ -208,39 +216,10 @@ a {
     position: absolute;
     right: 25px;
     top: 15px;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
     
     
 }
-
-/** 
-
-.restaurants__texte {
-    padding-left: 15px;
-    position: relative;
-}
-
-.coeur {
-    font-size: 24px;
-    position: absolute;
-    right: 25px;
-    bottom: 28px;
-    
-    
-}
-
-.restaurants__nom {
-    margin-bottom: 5px;
-    
-}
-
-.restaurants__localisation {
-    
-    margin-top: 5px;
-    
-}
-
-
-**/
 
 
 .restaurants__infos {
@@ -274,6 +253,8 @@ a {
 }
 
 .restaurants__localisation {
+    font-size: 17px;
+    font-weight: 300;
     margin: 3px;
 }
 

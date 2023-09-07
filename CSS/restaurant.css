@@ -16,6 +16,11 @@ a {
     display: flex;
     align-items: center;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
     
 }
 
@@ -110,7 +115,7 @@ a {
 }
 
 .menus__details {
-    
+    font-size: 15px;
     margin: 5px;
 }
 
@@ -121,7 +126,7 @@ a {
 
 .commander {
     color: white;
-    padding: 18px 22px 18px 22px;
+    padding: 16px 48px 16px 48px;
     background: #ff79da;
     background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
     margin: auto;
