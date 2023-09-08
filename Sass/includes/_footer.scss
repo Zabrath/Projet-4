@@ -1,7 +1,6 @@
 .footer {
     background-color: #353535;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     
     
     &__logo {
@@ -14,8 +13,7 @@
     
     &__menu {
         
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 10px;
         padding-left: 20px;
         padding-bottom: 30px;

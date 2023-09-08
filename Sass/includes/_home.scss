@@ -1,0 +1,211 @@
+/** Paris, belleville **/
+
+.localisation {
+    background: #eaeaea;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: #353535;
+}
+
+.localisation i {
+    font-size: 24px;
+    padding-right: 15px;
+}
+
+/** Réservez/explorer **/
+
+.explorer {
+    background: whitesmoke;
+    padding: 39px 50px 57px 50px;  
+    @include flex-column;  
+    text-align: center;    
+    justify-content: center;
+    
+    &__titre {
+        margin: 0;
+        padding : 0px 15px 15px 15px ;
+        font-size: 24px;
+        font-weight: bold;
+        
+    }
+    
+    &__texte {
+        margin: 0;
+        padding: 0px 15px 25px 15px ;
+        font-size: 18px;
+        font-weight: lighter;
+        font-weight: 300;
+        
+        
+    }
+    
+    &__bouton {
+        
+        color: white;
+        padding: 18px 22px 18px 22px;
+        @include bouton-degrade;
+    }
+}
+
+/** Fonctionnement menu **/
+
+
+.fonctionnement {
+    
+    @include flex-column;
+    padding-bottom: 68px;   
+    
+
+
+&__titre {
+    
+    padding-top: 24px;
+    padding-left: 20px;
+    
+    font-weight: bold;
+    font-size: 26px;
+}
+
+&__menu {
+    
+    @include flex-column;
+    gap: 25px;
+    
+    padding-left: 35px;
+    padding-right: 20px;
+    
+    
+    
+}
+
+&__card {
+    background: #f6f6f6 ;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 0;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    
+    
+    
+}
+
+&__numero {
+    background: #9356DC;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: -14px;
+}
+
+&__icone {
+    font-size: 14px;
+    color: #7E7E7E;
+    font-size: 24px;
+}
+}
+
+.fa-store {
+    color: #9356DC;
+}
+
+
+/** Restaurants en vignettes **/
+
+.restaurants {
+    background: #f6f6f6;
+    padding-bottom: 90px;
+    
+    
+    &__titre {
+        font-size: 26px;
+        font-weight: 800;
+        padding-left: 25px;
+        margin-bottom: 25px;
+        padding-top: 70px;
+    }
+    
+    &__card {
+        @include flex-column;
+        gap: 25px;
+        padding-left: 25px;
+        padding-right: 25px;
+        
+    }
+    
+    &__vignette {
+        
+        width: 100%;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        border-radius: 20px;
+        position: relative;
+        
+        
+    }
+    
+    &__image {
+        height: 180px;
+        object-fit: cover;
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        
+    }
+    
+    &__nouveau {
+        
+        background: #99E2D0;
+        color: #008766 ;
+        font-weight: 600;
+        padding: 7px 15px;
+        border-radius: 5px;
+        position: absolute;
+        right: 25px;
+        top: 15px;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        
+        
+    }
+    
+    
+    &__infos {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+        justify-content: space-between;
+    }
+    
+    
+    &__texte {
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        @include flex-column;
+        
+    }
+    &__nom {
+        margin: 3px;
+        
+    }
+    
+    &__localisation {
+        font-size: 17px;
+        font-weight: 300;
+        margin: 3px;
+    }
+}
+
+
+.coeur {
+    font-size: 24px;
+    padding-right: 20px;
+}

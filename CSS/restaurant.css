@@ -107,7 +107,6 @@ a {
     background-color: white;
     border-radius: 15px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    
 }
 
 
@@ -115,23 +114,22 @@ a {
     padding-left: 15px;
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
+    flex-wrap: nowrap
+
 }
 
 .menus__plats {
-
     margin: 5px;
 }
 
-.menus__details {
+.menus__details { 
     font-size: 15px;
     margin: 5px;
 }
 
-.menus__prix {
+.menus__prix {    
     font-weight: bold;
-    padding-top: 20px;
 }
 
 

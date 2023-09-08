@@ -1,0 +1,13 @@
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin bouton-degrade {
+    background: #ff79da;
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    margin: auto;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: normal;
+}
