@@ -1,3 +1,6 @@
+@use "mixins" as *;
+
+
 .footer {
     background-color: #353535;
     @include flex-column;

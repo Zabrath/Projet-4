@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 .menu {
     @include flex-column;
     background-color: whitesmoke;
@@ -95,11 +97,18 @@
     margin: 5px;
 }
 
+&__check {
+    display: flex;
+}
+
 &__prix {
     font-weight: bold;
     padding-top: 20px;
+    padding-right: 5px;
+    
 }
 }
+
 
 
 

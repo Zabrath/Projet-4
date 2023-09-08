@@ -1,0 +1,334 @@
+@charset "UTF-8";
+.menus__animation:hover {
+  width: 65px;
+  height: 75px;
+  background-color: #99e2d0;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  background: white;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.header__logo {
+  height: 40px;
+  margin: auto;
+}
+
+.footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+}
+.footer__logo {
+  padding: 20px;
+  margin: 0;
+  color: white;
+  font-family: "Shrikhand", cursive;
+  font-weight: 100;
+}
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.footer__menu a {
+  color: white;
+}
+.footer__menu i {
+  padding-right: 10px;
+}
+
+.fa-handshake-angle {
+  font-size: 12px;
+}
+
+/** Paris, belleville **/
+.localisation {
+  background: #eaeaea;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  color: #353535;
+}
+
+.localisation i {
+  font-size: 24px;
+  padding-right: 15px;
+}
+
+/** Réservez/explorer **/
+.explorer {
+  display: flex;
+  flex-direction: column;
+  background: whitesmoke;
+  padding: 39px 50px 57px 50px;
+  text-align: center;
+  justify-content: center;
+}
+.explorer__titre {
+  margin: 0;
+  padding: 0px 15px 15px 15px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.explorer__texte {
+  margin: 0;
+  padding: 0px 15px 25px 15px;
+  font-size: 18px;
+  font-weight: lighter;
+  font-weight: 300;
+}
+.explorer__bouton {
+  color: white;
+  padding: 18px 22px 18px 22px;
+  background: #ff79da;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  margin: auto;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+/** Fonctionnement menu **/
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 68px;
+}
+.fonctionnement__titre {
+  padding-top: 24px;
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 26px;
+}
+.fonctionnement__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 35px;
+  padding-right: 20px;
+}
+.fonctionnement__card {
+  background: #f6f6f6;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px 0;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement__numero {
+  background: #9356DC;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -14px;
+}
+.fonctionnement__icone {
+  font-size: 14px;
+  color: #7E7E7E;
+  font-size: 24px;
+}
+
+.fa-store {
+  color: #9356DC;
+}
+
+/** Restaurants en vignettes **/
+.restaurants {
+  background: #f6f6f6;
+  padding-bottom: 90px;
+}
+.restaurants__titre {
+  font-size: 26px;
+  font-weight: 800;
+  padding-left: 25px;
+  margin-bottom: 25px;
+  padding-top: 70px;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.restaurants__vignette {
+  width: 100%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  position: relative;
+}
+.restaurants__image {
+  height: 180px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.restaurants__nouveau {
+  background: #99E2D0;
+  color: #008766;
+  font-weight: 600;
+  padding: 7px 15px;
+  border-radius: 5px;
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.restaurants__infos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-between;
+}
+.restaurants__texte {
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants__nom {
+  margin: 3px;
+}
+.restaurants__localisation {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 3px;
+}
+
+.coeur {
+  font-size: 24px;
+  padding-right: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+  width: 100%;
+  margin-top: -30px;
+  position: relative;
+  border-radius: 40px 40px 0 0;
+  padding-bottom: 40px;
+}
+.menu__photo {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.menu__titre {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Shrikhand", cursive;
+}
+.menu__titre h1 {
+  font-size: 28px;
+  font-weight: normal;
+}
+.menu__icone {
+  font-size: 24px;
+}
+
+.menus {
+  padding-left: 13px;
+  padding-right: 13px;
+  padding-bottom: 35px;
+}
+.menus__complets {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.menus__titre {
+  font-size: 16px;
+  font-weight: 350;
+  padding-top: 20px;
+  position: relative;
+}
+.menus__titre::after {
+  content: "";
+  width: 35px;
+  height: 5px;
+  background-color: #99e2d0;
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+}
+.menus__cartes {
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.menus__infos {
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.menus__plats {
+  margin: 5px;
+}
+.menus__details {
+  font-size: 15px;
+  margin: 5px;
+}
+.menus__check {
+  display: flex;
+}
+.menus__prix {
+  font-weight: bold;
+  padding-top: 20px;
+  padding-right: 5px;
+}
+
+.commander {
+  color: white;
+  padding: 16px 48px 16px 48px;
+  background: #ff79da;
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  margin: auto;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 90px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}/*# sourceMappingURL=main.css.map */

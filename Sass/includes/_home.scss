@@ -1,3 +1,5 @@
+@use "mixins" as *;
+
 /** Paris, belleville **/
 
 .localisation {
@@ -18,9 +20,9 @@
 /** Réservez/explorer **/
 
 .explorer {
+    @include flex-column;  
     background: whitesmoke;
     padding: 39px 50px 57px 50px;  
-    @include flex-column;  
     text-align: center;    
     justify-content: center;
     
