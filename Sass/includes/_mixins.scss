@@ -11,3 +11,8 @@
     font-size: 16px;
     font-weight: normal;
 }
+
+@mixin reset-marge {
+    margin: 0;
+    padding: 0;
+}

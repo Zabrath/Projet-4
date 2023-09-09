@@ -211,3 +211,85 @@
     font-size: 24px;
     padding-right: 20px;
 }
+
+
+
+@media (min-width: 1440px){
+
+    .fonctionnement {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 180px;
+        padding-right: 180px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+
+        &__titre {
+            width: 100%;
+     
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            gap: 36px;
+            padding-left: 35px;
+     
+        }
+
+        &__card {
+            padding-right: 38px;
+
+
+        }
+        
+        &__texte {
+            font-size: 16px;
+        }
+    }
+
+
+
+    .restaurants {
+        padding-bottom: 30px;
+
+        &__titre {
+        padding-left: 180px;
+        }
+
+        &__card {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 50px;
+            padding-right: 180px;
+            padding-left: 180px;
+        }
+
+        &__vignette {
+            width: 490px;
+            height: 251px;
+        }
+
+        &__texte {
+            padding-top: 8px;
+            margin: 0;
+        }
+
+        &__nom {
+            font-size: 18px;
+            @include reset-marge;
+        }
+
+        &__localisation {
+            font-size: 17px;
+            @include reset-marge;
+        }
+    }
+
+
+
+}

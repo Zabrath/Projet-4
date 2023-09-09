@@ -35,3 +35,39 @@
 .fa-handshake-angle {
     font-size: 12px;
 }
+
+
+
+@media (min-width: 1200px){
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 30px 25px;
+
+
+    &__logo{
+        font-size: 18px;
+        font-weight: 400;
+        padding-left: 100px;
+    }
+
+    &__menu{
+    display: flex;
+    flex-direction: row;
+    @include reset-marge;      
+
+    }
+
+    &__menu a {
+        display: flex;
+        align-items: center;
+        
+    }
+
+    &__mentions {
+        padding-left: 50px;
+    }
+}
+
+}

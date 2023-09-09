@@ -1,3 +1,5 @@
+
+
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -294,3 +296,19 @@ a {
 .fa-handshake-angle {
     font-size: 12px;
 }
+
+
+
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #008766;
+}
+
+.footer__menu {
+    display: flex;
+    flex-direction: row;
+}
+
