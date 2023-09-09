@@ -3,7 +3,6 @@
 .menu {
     @include flex-column;
     background-color: whitesmoke;
-    width: 100%;
     margin-top: -30px;
     position: relative;
     border-radius: 40px 40px 0 0;
@@ -109,15 +108,45 @@
 }
 }
 
-
-
-
-
-
-
 .commander {
     color: white;
     padding: 16px 48px 16px 48px;
     @include bouton-degrade;
+}
+
+
+@media (min-width: 1440px){
+
+
+.menu {
+margin-left: 200px;
+margin-right: 200px;
+
+&__photo {
+    width: 100%;
+    height: 393px;
+    object-fit: cover;
+}
+
+&__titre {
+    padding-top: 61px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+
+}
+
+}
+
+.menus {
+    margin-left: 190px;
+    margin-right: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
 }
 

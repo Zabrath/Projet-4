@@ -56,7 +56,7 @@
   font-size: 12px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
   .footer {
     display: flex;
     flex-direction: row-reverse;
@@ -325,7 +325,6 @@
   display: flex;
   flex-direction: column;
   background-color: whitesmoke;
-  width: 100%;
   margin-top: -30px;
   position: relative;
   border-radius: 40px 40px 0 0;
@@ -416,9 +415,33 @@
   font-weight: normal;
 }
 
+@media (min-width: 1440px) {
+  .menu {
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+  .menu__photo {
+    width: 100%;
+    height: 393px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .menu__titre {
+    padding-top: 61px;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+  }
+  .menus {
+    margin-left: 190px;
+    margin-right: 190px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
 body {
   font-family: "Roboto", sans-serif;
-  margin: 0;
   padding: 0;
   margin: 0;
   padding-top: 90px;
