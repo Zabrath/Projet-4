@@ -10,7 +10,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    @include reset-marge;
+    padding: 0;
+    margin: 0;
     padding-top: 90px;
     
 }

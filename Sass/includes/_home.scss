@@ -215,6 +215,28 @@
 
 
 @media (min-width: 1440px){
+    
+
+    .localisation {
+    
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;}
+
+    .localisation i {
+        font-size: 18px;
+    }
+
+
+    .explorer {
+        
+        &__titre {
+
+            font-size: 40px;            
+        }
+        
+    }
 
     .fonctionnement {
         display: flex;
@@ -239,8 +261,7 @@
         }
 
         &__card {
-            padding-right: 38px;
-
+            padding-right: 50px;
 
         }
         
