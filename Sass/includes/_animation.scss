@@ -6,4 +6,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.25s ease-in-out;
 }
+
+/* Le fun commence ICI !!!  */
+.anim{
+    width: 22px;
+    overflow: visible;
+    cursor: pointer;
+}
+.anim path{
+    fill: url(#myGradient);
+    stroke: black;
+    stroke-width: 15px;
+
+}
+.anim stop {
+    transition: all 0.25s ease-in-out;
+}
+
+.anim:hover #myGradient stop:first-child{
+    stop-color: pink;
+
+}
+.anim:hover #myGradient stop:last-child{
+    stop-color: purple; 
+}
+

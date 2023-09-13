@@ -1,5 +1,7 @@
 @use "mixins" as *;
 
+
+
 /** Paris, belleville **/
 
 .localisation {
@@ -239,8 +241,9 @@
     }
 
     .fonctionnement {
-        display: flex;
+
         flex-wrap: wrap;
+        @include display-center;
         padding-left: 180px;
         padding-right: 180px;
         padding-top: 50px;
@@ -248,7 +251,9 @@
         
 
         &__titre {
+            @include display-center;
             width: 100%;
+            padding-bottom: 30px;
      
         }
 
@@ -284,7 +289,7 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
             gap: 50px;
             padding-right: 180px;
             padding-left: 180px;
