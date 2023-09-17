@@ -1,35 +1,206 @@
-.menus__animation:hover {
-    width: 65px;
+@use "mixins" as *;
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Animation Check  */
+
+.menus__animation{
+    width: 0px;
     height: 75px;
     background-color: #99e2d0;
     border-radius: 0 15px 15px 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.25s ease-in-out;
+    @include transition;
+    svg {
+        rotate: 180deg;
+        @include transition;
+    }
 }
 
-/* Le fun commence ICI !!!  */
+    .menus__cartes:hover {
+
+        .menus__animation {
+            width: 64px;
+
+            svg {
+                rotate: 360deg;
+
+            }
+            
+        }
+
+
+    }
+
+
+/* Coeur  */
+
 .anim{
     width: 22px;
     overflow: visible;
     cursor: pointer;
-}
-.anim path{
+    
+ path{
     fill: url(#myGradient);
     stroke: black;
     stroke-width: 15px;
 
 }
-.anim stop {
-    transition: all 0.25s ease-in-out;
+ stop {
+    @include transition;
 }
 
-.anim:hover #myGradient stop:first-child{
-    stop-color: pink;
+
+&:hover #myGradient stop:first-child{
+    stop-color: #ff79da;
 
 }
-.anim:hover #myGradient stop:last-child{
-    stop-color: purple; 
+&:hover #myGradient stop:last-child{
+    stop-color: #9356dc;   
 }
 
+&:hover path {
+    stroke-width: 0;
+    @include transition;
+}
+
+}
+
+
+
+
+
+
+/* boutons  */
+
+
+
+.explorer__bouton {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.explorer__bouton:before {
+    content: '';
+    background: linear-gradient(30deg,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 30s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+}
+
+
+.explorer__bouton:active:after {
+    background: transparent;
+}
+
+.explorer__bouton:hover:before {
+    opacity: 1;
+}
+
+.explorer__bouton:after {
+    background: #9356dc;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.explorer__bouton:hover:after{
+
+    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    @include transition;
+
+} 
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+/* Vignettes */
+
+
+.restaurants__vignette {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 30px;
+}
+
+.restaurants__vignette:before {
+    content: '';
+    background: linear-gradient(30deg,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 30s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 30px;
+}
+
+.restaurants__vignette:active:after {
+    background: transparent;
+}
+
+.restaurants__vignette:hover:before {
+    opacity: 1;
+}
+
+.restaurants__vignette:after {
+    background: whitesmoke;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: 30px;
+}
+
+.restaurants__vignette:hover:after{
+
+    background: white;
+    @include transition;
+
+} 
+
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}

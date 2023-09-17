@@ -1,6 +1,11 @@
 @charset "UTF-8";
-.menus__animation:hover {
-  width: 65px;
+* {
+  box-sizing: border-box;
+}
+
+/* Animation Check  */
+.menus__animation {
+  width: 0px;
   height: 75px;
   background-color: #99e2d0;
   border-radius: 0 15px 15px 0;
@@ -9,32 +14,169 @@
   align-items: center;
   transition: all 0.25s ease-in-out;
 }
+.menus__animation svg {
+  rotate: 180deg;
+  transition: all 0.25s ease-in-out;
+}
 
-/* Le fun commence ICI !!!  */
+.menus__cartes:hover .menus__animation {
+  width: 64px;
+}
+.menus__cartes:hover .menus__animation svg {
+  rotate: 360deg;
+}
+
+/* Coeur  */
 .anim {
   width: 22px;
   overflow: visible;
   cursor: pointer;
 }
-
 .anim path {
   fill: url(#myGradient);
   stroke: black;
   stroke-width: 15px;
 }
-
 .anim stop {
   transition: all 0.25s ease-in-out;
 }
-
 .anim:hover #myGradient stop:first-child {
-  stop-color: pink;
+  stop-color: #ff79da;
 }
-
 .anim:hover #myGradient stop:last-child {
-  stop-color: purple;
+  stop-color: #9356dc;
+}
+.anim:hover path {
+  stroke-width: 0;
+  transition: all 0.25s ease-in-out;
 }
 
+/* boutons  */
+.explorer__bouton {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+.explorer__bouton:before {
+  content: "";
+  background: linear-gradient(30deg, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 30s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.explorer__bouton:active:after {
+  background: transparent;
+}
+
+.explorer__bouton:hover:before {
+  opacity: 1;
+}
+
+.explorer__bouton:after {
+  background: #9356dc;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+.explorer__bouton:hover:after {
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  transition: all 0.25s ease-in-out;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* Vignettes */
+.restaurants__vignette {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 30px;
+}
+
+.restaurants__vignette:before {
+  content: "";
+  background: linear-gradient(30deg, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 30s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 30px;
+}
+
+.restaurants__vignette:active:after {
+  background: transparent;
+}
+
+.restaurants__vignette:hover:before {
+  opacity: 1;
+}
+
+.restaurants__vignette:after {
+  background: whitesmoke;
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 30px;
+}
+
+.restaurants__vignette:hover:after {
+  background: white;
+  transition: all 0.25s ease-in-out;
+}
+
+@keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
 .header {
   background: white;
   height: 60px;
@@ -86,7 +228,8 @@
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    padding: 20px 0;
+    padding-bottom: 20px;
+    padding-top: 50px;
     width: 100%;
   }
   .footer__logo {
@@ -117,6 +260,7 @@
   justify-content: center;
   gap: 5px;
   color: #353535;
+  box-shadow: inset 0px -20px 20px -8px rgba(0, 0, 0, 0.15);
 }
 
 .localisation i {
@@ -293,18 +437,12 @@
   }
   .fonctionnement {
     flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-left: 180px;
     padding-right: 180px;
     padding-top: 50px;
     padding-bottom: 50px;
   }
   .fonctionnement__titre {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 100%;
     padding-bottom: 30px;
   }

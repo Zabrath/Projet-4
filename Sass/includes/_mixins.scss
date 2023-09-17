@@ -22,3 +22,7 @@
     align-items: center;
     justify-content: center;
 }
+
+@mixin transition {
+    transition: all 0.25s ease-in-out;
+}

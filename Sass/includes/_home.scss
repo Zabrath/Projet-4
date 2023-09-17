@@ -7,11 +7,10 @@
 .localisation {
     background: #eaeaea;
     font-size: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-center;
     gap: 5px;
     color: #353535;
+    box-shadow: inset 0px -20px 20px -8px rgba(0, 0, 0, 0.15);
 }
 
 .localisation i {
@@ -104,9 +103,7 @@
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include display-center;
     position: relative;
     left: -14px;
 }
@@ -243,7 +240,6 @@
     .fonctionnement {
 
         flex-wrap: wrap;
-        @include display-center;
         padding-left: 180px;
         padding-right: 180px;
         padding-top: 50px;
@@ -251,7 +247,7 @@
         
 
         &__titre {
-            @include display-center;
+            
             width: 100%;
             padding-bottom: 30px;
      
