@@ -15,8 +15,8 @@
   transition: all 0.25s ease-in-out;
 }
 .menus__animation svg {
-  rotate: 180deg;
-  transition: all 0.25s ease-in-out;
+  rotate: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 .menus__cartes:hover .menus__animation {
@@ -124,7 +124,7 @@
 }
 
 /* boutons  */
-.explorer__bouton {
+.animation__boutons {
   border: none;
   outline: none;
   cursor: pointer;
@@ -133,7 +133,7 @@
   border-radius: 30px;
 }
 
-.explorer__bouton:before {
+.animation__boutons:before {
   content: "";
   background: linear-gradient(30deg, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA);
   position: absolute;
@@ -150,16 +150,18 @@
   border-radius: 30px;
 }
 
-.explorer__bouton:active:after {
+.animation__boutons:active:after {
   background: transparent;
 }
 
-.explorer__bouton:hover:before {
+.animation__boutons:hover:before {
   opacity: 1;
 }
 
-.explorer__bouton:after {
-  background: #9356dc;
+.animation__boutons:after {
+  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  /*box-shadow: 0px 0px 0 3px rgba(147, 86, 220, 0.2);*/
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   z-index: -1;
   content: "";
   position: absolute;
@@ -170,7 +172,7 @@
   border-radius: 30px;
 }
 
-.explorer__bouton:hover:after {
+.animation__boutons:hover:after {
   background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
   transition: all 0.25s ease-in-out;
 }
@@ -332,7 +334,7 @@
   justify-content: center;
   gap: 5px;
   color: #353535;
-  box-shadow: inset 0px -20px 20px -8px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0px 20px 20px -8px rgba(0, 0, 0, 0.15);
 }
 
 .localisation i {
