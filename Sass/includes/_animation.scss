@@ -39,7 +39,7 @@
     }
 
 
-/* Coeur  */
+/* Coeurs  */
 
 .anim{
     width: 22px;
@@ -68,6 +68,99 @@
 &:hover path {
     stroke-width: 0;
     @include transition;
+}
+
+}
+
+.anim2{
+    width: 22px;
+    overflow: visible;
+    cursor: pointer;
+    
+ path{
+    fill: url(#myGradient2);
+    stroke: black;
+    stroke-width: 15px;
+
+}
+ stop {
+    @include transition;
+}
+
+
+&:hover #myGradient2 stop:first-child{
+    stop-color: #ff79da;
+
+}
+&:hover #myGradient2 stop:last-child{
+    stop-color: #9356dc;   
+}
+
+&:hover path {
+    stroke-width: 0;
+    @include transition;
+}
+
+}
+
+.anim3{
+    width: 22px;
+    overflow: visible;
+    cursor: pointer;
+    
+ path{
+    fill: url(#myGradient3);
+    stroke: black;
+    stroke-width: 15px;
+
+}
+ stop {
+    transition: all 0.25s ease-in-out;
+}
+
+
+&:hover #myGradient3 stop:first-child{
+    stop-color: #ff79da;
+
+}
+&:hover #myGradient3 stop:last-child{
+    stop-color: #9356dc;   
+}
+
+&:hover path {
+    stroke-width: 0;
+    transition: all 0.25s ease-in-out;
+}
+
+}
+
+.anim4{
+    width: 22px;
+    overflow: visible;
+    cursor: pointer;
+    
+ path{
+    fill: url(#myGradient4);
+    stroke: black;
+    stroke-width: 15px;
+
+}
+ stop {
+    transition: all 0.25s ease-in-out;
+}
+
+
+&:hover #myGradient4 stop:first-child{
+    stop-color: #ff79da;
+
+}
+&:hover #myGradient4 stop:last-child{
+    stop-color: #9356dc;   
+}
+
+&:hover path {
+    stroke-width: 0;
+    transition: all 0.25s ease-in-out;
 }
 
 }

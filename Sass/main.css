@@ -26,7 +26,7 @@
   rotate: 360deg;
 }
 
-/* Coeur  */
+/* Coeurs  */
 .anim {
   width: 22px;
   overflow: visible;
@@ -47,6 +47,78 @@
   stop-color: #9356dc;
 }
 .anim:hover path {
+  stroke-width: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.anim2 {
+  width: 22px;
+  overflow: visible;
+  cursor: pointer;
+}
+.anim2 path {
+  fill: url(#myGradient2);
+  stroke: black;
+  stroke-width: 15px;
+}
+.anim2 stop {
+  transition: all 0.25s ease-in-out;
+}
+.anim2:hover #myGradient2 stop:first-child {
+  stop-color: #ff79da;
+}
+.anim2:hover #myGradient2 stop:last-child {
+  stop-color: #9356dc;
+}
+.anim2:hover path {
+  stroke-width: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.anim3 {
+  width: 22px;
+  overflow: visible;
+  cursor: pointer;
+}
+.anim3 path {
+  fill: url(#myGradient3);
+  stroke: black;
+  stroke-width: 15px;
+}
+.anim3 stop {
+  transition: all 0.25s ease-in-out;
+}
+.anim3:hover #myGradient3 stop:first-child {
+  stop-color: #ff79da;
+}
+.anim3:hover #myGradient3 stop:last-child {
+  stop-color: #9356dc;
+}
+.anim3:hover path {
+  stroke-width: 0;
+  transition: all 0.25s ease-in-out;
+}
+
+.anim4 {
+  width: 22px;
+  overflow: visible;
+  cursor: pointer;
+}
+.anim4 path {
+  fill: url(#myGradient4);
+  stroke: black;
+  stroke-width: 15px;
+}
+.anim4 stop {
+  transition: all 0.25s ease-in-out;
+}
+.anim4:hover #myGradient4 stop:first-child {
+  stop-color: #ff79da;
+}
+.anim4:hover #myGradient4 stop:last-child {
+  stop-color: #9356dc;
+}
+.anim4:hover path {
   stroke-width: 0;
   transition: all 0.25s ease-in-out;
 }
