@@ -212,6 +212,107 @@
 }
 
 
+@media (min-width: 1024px){
+    
+
+    .localisation {
+    
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;}
+
+    .localisation i {
+        font-size: 18px;
+    }
+
+
+    .explorer {
+        
+        &__titre {
+
+            font-size: 40px;            
+        }
+        
+    }
+
+    .fonctionnement {
+
+        flex-wrap: wrap;
+        padding-left: 180px;
+        padding-top: 50px;
+        
+
+        &__titre {
+            
+            width: 100%;
+            padding-bottom: 30px;
+     
+        }
+
+        &__menu {
+            display: flex;
+            flex-direction: row;
+            gap: 36px;
+            padding-left: 35px;
+     
+        }
+
+        &__card {
+            padding-right: 50px;
+
+        }
+        
+        &__texte {
+            font-size: 16px;
+        }
+    }
+
+
+
+    .restaurants {
+        padding-bottom: 30px;
+
+        &__titre {
+        padding-left: 180px;
+        }
+
+        &__card {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px;
+
+        }
+
+        &__vignette {
+            width: 35%;
+            height: 35%;
+        }
+
+        &__texte {
+            padding-top: 8px;
+            margin: 0;
+        }
+
+        &__nom {
+            font-size: 18px;
+            @include reset-marge;
+        }
+
+        &__localisation {
+            font-size: 17px;
+            @include reset-marge;
+        }
+    }
+
+
+
+}
+
+
 
 @media (min-width: 1440px){
     
