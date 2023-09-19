@@ -299,3 +299,14 @@
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+
+
+
+/* Footer */
+
+.anim__lien__footer:hover {
+
+    color: #FF79DA;
+    @include transition;
+
+}
