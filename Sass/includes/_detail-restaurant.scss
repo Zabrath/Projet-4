@@ -106,6 +106,13 @@
     padding-right: 5px;
     
 }
+
+&__plats, &__details, &__textes {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 }
 
 .commander {

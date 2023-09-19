@@ -26,7 +26,7 @@
   rotate: 360deg;
 }
 
-/* Coeurs  */
+/* Coeurs ce code permet d'animé un code un svg permettant un dégradé. La répétition pourrait être évité avec une autre animation*/
 .anim {
   width: 22px;
   overflow: visible;
@@ -252,8 +252,8 @@
   }
 }
 /* Footer */
-.anim__lien__footer:hover {
-  color: #FF79DA;
+.footer__menu a:hover {
+  color: rgba(255, 121, 217, 0.7254901961);
   transition: all 0.25s ease-in-out;
 }
 
@@ -747,6 +747,11 @@
   font-weight: bold;
   padding-top: 20px;
   padding-right: 5px;
+}
+.menus__plats, .menus__details, .menus__textes {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .commander {

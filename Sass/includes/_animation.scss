@@ -39,7 +39,7 @@
     }
 
 
-/* Coeurs  */
+/* Coeurs ce code permet d'animé un code un svg permettant un dégradé. La répétition pourrait être évité avec une autre animation*/
 
 .anim{
     width: 22px;
@@ -164,10 +164,6 @@
 }
 
 }
-
-
-
-
 
 
 /* boutons  */
@@ -304,9 +300,9 @@
 
 /* Footer */
 
-.anim__lien__footer:hover {
+.footer__menu a:hover {
 
-    color: #FF79DA;
+    color: #ff79d9b9;
     @include transition;
 
 }
