@@ -128,7 +128,6 @@
     
     
     &__titre {
-        background-color: green;
         font-size: 26px;
         font-weight: 800;
         padding-left: 25px;
@@ -166,14 +165,13 @@
         
         background: #99E2D0;
         color: #008766 ;
-        font-weight: 600;
+        font-weight: 500;
         padding: 7px 15px;
-        border-radius: 5px;
+        border-radius: 3px;
         position: absolute;
         right: 25px;
         top: 15px;
-        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-        
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);       
         
     }
     
@@ -292,7 +290,6 @@
         
 
         &__titre {
-            background-color:blue;
             display: flex;
             justify-content: center;
             width: 100%;
@@ -354,11 +351,6 @@
         padding-left: 180px
     }
 
-    &__menu {
-
-        @include reset-marge;   
-    }
-
     &__card{
 
         width: 322px;
@@ -366,13 +358,13 @@
     }
 } 
 
-}
+
 
 .restaurants {
 
     &__titre{
 
-        background-color: red;
+
         @include reset-marge;
         display: flex;
         justify-content: flex-start;
@@ -397,5 +389,7 @@
     &__texte {
         padding-left: 18px;
     }
+
+}
 
 }

@@ -296,6 +296,9 @@
 }
 .footer__menu a {
   color: white;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
 }
 .footer__menu i {
   padding-right: 10px;
@@ -326,27 +329,30 @@
   .footer {
     display: flex;
     flex-direction: row-reverse;
-    padding-bottom: 20px;
-    padding-top: 45px;
-    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
   }
   .footer__logo {
     font-size: 18px;
-    font-weight: 400;
-    padding-left: 100px;
-  }
-  .footer__menu {
-    display: flex;
-    flex-direction: row;
     margin: 0;
     padding: 0;
+    padding-top: 57px;
+    padding-bottom: 20px;
+    padding-right: 60px;
+  }
+  .footer__menu {
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    padding-top: 50px;
+    padding-right: 70px;
   }
   .footer__menu a {
-    display: flex;
-    align-items: center;
+    gap: 0;
+    padding-left: 12px;
   }
   .footer__mentions {
-    padding-left: 50px;
+    margin-left: 50px;
   }
 }
 /** Paris, belleville **/
@@ -454,7 +460,6 @@
   padding-bottom: 90px;
 }
 .restaurants__titre {
-  background-color: green;
   font-size: 26px;
   font-weight: 800;
   padding-left: 25px;
@@ -484,9 +489,9 @@
 .restaurants__nouveau {
   background: #99E2D0;
   color: #008766;
-  font-weight: 600;
+  font-weight: 500;
   padding: 7px 15px;
-  border-radius: 5px;
+  border-radius: 3px;
   position: absolute;
   right: 25px;
   top: 15px;
@@ -568,7 +573,6 @@
     padding-bottom: 30px;
   }
   .restaurants__titre {
-    background-color: blue;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -616,39 +620,33 @@
     padding-bottom: 25px;
     padding-left: 180px;
   }
-  .fonctionnement__menu {
-    margin: 0;
-    padding: 0;
-  }
   .fonctionnement__card {
     width: 322px;
     height: 72px;
   }
+  .restaurants__titre {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 162px;
+    padding-top: 30px;
+    padding-bottom: 28px;
+  }
+  .restaurants__card {
+    margin: 0;
+    padding: 0;
+    gap: 50px 100px;
+  }
+  .restaurants__infos {
+    margin: 0;
+    padding: 0;
+    height: 78px;
+  }
+  .restaurants__texte {
+    padding-left: 18px;
+  }
 }
-.restaurants__titre {
-  background-color: red;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 162px;
-  padding-top: 30px;
-  padding-bottom: 28px;
-}
-.restaurants__card {
-  margin: 0;
-  padding: 0;
-  gap: 50px 100px;
-}
-.restaurants__infos {
-  margin: 0;
-  padding: 0;
-  height: 78px;
-}
-.restaurants__texte {
-  padding-left: 18px;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
