@@ -58,11 +58,11 @@
 
 
 &:hover #myGradient stop:first-child{
-    stop-color: #ff79da;
+    stop-color: var(--rose);
 
 }
 &:hover #myGradient stop:last-child{
-    stop-color: #9356dc;   
+    stop-color: var(--violet);   
 }
 
 &:hover path {
@@ -89,11 +89,11 @@
 
 
 &:hover #myGradient2 stop:first-child{
-    stop-color: #ff79da;
+    stop-color: var(--rose);
 
 }
 &:hover #myGradient2 stop:last-child{
-    stop-color: #9356dc;   
+    stop-color: var(--violet);   
 }
 
 &:hover path {
@@ -120,11 +120,11 @@
 
 
 &:hover #myGradient3 stop:first-child{
-    stop-color: #ff79da;
+    stop-color: var(--rose);
 
 }
 &:hover #myGradient3 stop:last-child{
-    stop-color: #9356dc;   
+    stop-color: var(--violet);   
 }
 
 &:hover path {
@@ -151,11 +151,11 @@
 
 
 &:hover #myGradient4 stop:first-child{
-    stop-color: #ff79da;
+    stop-color: var(--rose);
 
 }
 &:hover #myGradient4 stop:last-child{
-    stop-color: #9356dc;   
+    stop-color: var(--violet);   
 }
 
 &:hover path {
@@ -181,7 +181,7 @@
 
 .animation__boutons:before {
     content: '';
-    background: linear-gradient(30deg,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA);
+    background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
     position: absolute;
     top: -2px;
     left:-2px;
@@ -206,7 +206,7 @@
 }
 
 .animation__boutons:after {
-    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
     /*box-shadow: 0px 0px 0 3px rgba(147, 86, 220, 0.2);*/
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
     z-index: -1;
@@ -221,7 +221,7 @@
 
 .animation__boutons:hover:after{
 
-    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
     @include transition;
 
 } 
@@ -247,7 +247,7 @@
 
 .restaurants__vignette:before {
     content: '';
-    background: linear-gradient(30deg,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA,  #9356dc, #FF79DA);
+    background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
     position: absolute;
     top: -2px;
     left:-2px;
@@ -302,7 +302,7 @@
 
 .footer__menu a:hover {
 
-    color: #ff79d9b9;
+    color: var(--rose);
     @include transition;
 
 }

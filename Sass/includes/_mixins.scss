@@ -4,8 +4,8 @@
 }
 
 @mixin bouton-degrade {
-    background: #ff79da;
-    background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+    background: var(--rose);
+    background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
     margin: auto;
     border-radius: 30px;
     font-size: 16px;

@@ -41,10 +41,10 @@
   transition: all 0.25s ease-in-out;
 }
 .anim:hover #myGradient stop:first-child {
-  stop-color: #ff79da;
+  stop-color: var(--rose);
 }
 .anim:hover #myGradient stop:last-child {
-  stop-color: #9356dc;
+  stop-color: var(--violet);
 }
 .anim:hover path {
   stroke-width: 0;
@@ -65,10 +65,10 @@
   transition: all 0.25s ease-in-out;
 }
 .anim2:hover #myGradient2 stop:first-child {
-  stop-color: #ff79da;
+  stop-color: var(--rose);
 }
 .anim2:hover #myGradient2 stop:last-child {
-  stop-color: #9356dc;
+  stop-color: var(--violet);
 }
 .anim2:hover path {
   stroke-width: 0;
@@ -89,10 +89,10 @@
   transition: all 0.25s ease-in-out;
 }
 .anim3:hover #myGradient3 stop:first-child {
-  stop-color: #ff79da;
+  stop-color: var(--rose);
 }
 .anim3:hover #myGradient3 stop:last-child {
-  stop-color: #9356dc;
+  stop-color: var(--violet);
 }
 .anim3:hover path {
   stroke-width: 0;
@@ -113,10 +113,10 @@
   transition: all 0.25s ease-in-out;
 }
 .anim4:hover #myGradient4 stop:first-child {
-  stop-color: #ff79da;
+  stop-color: var(--rose);
 }
 .anim4:hover #myGradient4 stop:last-child {
-  stop-color: #9356dc;
+  stop-color: var(--violet);
 }
 .anim4:hover path {
   stroke-width: 0;
@@ -135,7 +135,7 @@
 
 .animation__boutons:before {
   content: "";
-  background: linear-gradient(30deg, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA);
+  background: linear-gradient(30deg, var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose));
   position: absolute;
   top: -2px;
   left: -2px;
@@ -159,7 +159,7 @@
 }
 
 .animation__boutons:after {
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
   /*box-shadow: 0px 0px 0 3px rgba(147, 86, 220, 0.2);*/
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   z-index: -1;
@@ -173,7 +173,7 @@
 }
 
 .animation__boutons:hover:after {
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
   transition: all 0.25s ease-in-out;
 }
 
@@ -200,7 +200,7 @@
 
 .restaurants__vignette:before {
   content: "";
-  background: linear-gradient(30deg, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA, #9356dc, #FF79DA);
+  background: linear-gradient(30deg, var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose));
   position: absolute;
   top: -2px;
   left: -2px;
@@ -253,7 +253,7 @@
 }
 /* Footer */
 .footer__menu a:hover {
-  color: rgba(255, 121, 217, 0.7254901961);
+  color: var(--rose);
   transition: all 0.25s ease-in-out;
 }
 
@@ -268,6 +268,7 @@
   left: 0;
   right: 0;
   z-index: 1;
+  box-shadow: inset 0px -20px 20px -8px rgba(0, 0, 0, 0.15);
 }
 .header__logo {
   height: 40px;
@@ -304,7 +305,7 @@
   font-size: 12px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .footer__logo {
     display: flex;
     justify-content: center;
@@ -326,7 +327,7 @@
     display: flex;
     flex-direction: row-reverse;
     padding-bottom: 20px;
-    padding-top: 50px;
+    padding-top: 45px;
     width: 100%;
   }
   .footer__logo {
@@ -357,7 +358,6 @@
   justify-content: center;
   gap: 5px;
   color: #353535;
-  box-shadow: inset 0px 20px 20px -8px rgba(0, 0, 0, 0.15);
 }
 
 .localisation i {
@@ -389,9 +389,9 @@
 }
 .explorer__bouton {
   color: white;
-  padding: 18px 22px 18px 22px;
-  background: #ff79da;
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  padding: 13px 18px 13px 18px;
+  background: var(--rose);
+  background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
   margin: auto;
   border-radius: 30px;
   font-size: 16px;
@@ -427,7 +427,7 @@
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
 .fonctionnement__numero {
-  background: #9356DC;
+  background: var(--violet);
   color: white;
   width: 30px;
   height: 30px;
@@ -445,7 +445,7 @@
 }
 
 .fa-store {
-  color: #9356DC;
+  color: var(--violet);
 }
 
 /** Restaurants en vignettes **/
@@ -454,6 +454,7 @@
   padding-bottom: 90px;
 }
 .restaurants__titre {
+  background-color: green;
   font-size: 26px;
   font-weight: 800;
   padding-left: 25px;
@@ -519,7 +520,7 @@
   padding-right: 20px;
 }
 
-@media (min-width: 1024px) and (max-width: 1440px) {
+@media (min-width: 1024px) {
   .localisation {
     font-size: 13px;
     font-style: normal;
@@ -531,6 +532,9 @@
   }
   .explorer__titre {
     font-size: 40px;
+  }
+  .explorer__texte {
+    font-size: 18px;
   }
   .fonctionnement {
     padding-left: 25px;
@@ -564,6 +568,7 @@
     padding-bottom: 30px;
   }
   .restaurants__titre {
+    background-color: blue;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -597,75 +602,53 @@
   }
 }
 @media (min-width: 1440px) {
-  .localisation {
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
-  .localisation i {
-    font-size: 18px;
-  }
-  .explorer__titre {
-    font-size: 40px;
-  }
   .fonctionnement {
-    flex-wrap: wrap;
-    padding-left: 180px;
-    padding-right: 180px;
-    padding-top: 50px;
+    margin: 0;
+    padding: 0;
     padding-bottom: 50px;
+    padding-top: 50px;
   }
   .fonctionnement__titre {
-    width: 100%;
-    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 25px;
+    padding-left: 180px;
   }
   .fonctionnement__menu {
-    display: flex;
-    flex-direction: row;
-    gap: 36px;
-    padding-left: 35px;
+    margin: 0;
+    padding: 0;
   }
   .fonctionnement__card {
-    padding-right: 50px;
-  }
-  .fonctionnement__texte {
-    font-size: 16px;
-  }
-  .restaurants {
-    padding-bottom: 30px;
-  }
-  .restaurants__titre {
-    padding-left: 180px;
-  }
-  .restaurants__card {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 50px;
-    padding-right: 180px;
-    padding-left: 180px;
-  }
-  .restaurants__vignette {
-    width: 490px;
-    height: 251px;
-  }
-  .restaurants__texte {
-    padding-top: 8px;
-    margin: 0;
-  }
-  .restaurants__nom {
-    font-size: 18px;
-    margin: 0;
-    padding: 0;
-  }
-  .restaurants__localisation {
-    font-size: 17px;
-    margin: 0;
-    padding: 0;
+    width: 322px;
+    height: 72px;
   }
 }
+.restaurants__titre {
+  background-color: red;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 162px;
+  padding-top: 30px;
+  padding-bottom: 28px;
+}
+.restaurants__card {
+  margin: 0;
+  padding: 0;
+  gap: 50px 100px;
+}
+.restaurants__infos {
+  margin: 0;
+  padding: 0;
+  height: 78px;
+}
+.restaurants__texte {
+  padding-left: 18px;
+}
+
 .menu {
   display: flex;
   flex-direction: column;
@@ -716,7 +699,6 @@
   content: "";
   width: 35px;
   height: 5px;
-  background-color: #99e2d0;
   position: absolute;
   bottom: -12px;
   left: 0;
@@ -757,8 +739,8 @@
 .commander {
   color: white;
   padding: 16px 48px 16px 48px;
-  background: #ff79da;
-  background: linear-gradient(162deg, #ff79da 0%, #9356dc 100%);
+  background: var(--rose);
+  background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
   margin: auto;
   border-radius: 30px;
   font-size: 16px;
@@ -790,11 +772,16 @@
     gap: 40px;
   }
 }
+:root {
+  --rose:#ff79da;
+  --violet:#9356dc;
+}
+
 body {
   font-family: "Roboto", sans-serif;
-  padding: 0;
   margin: 0;
-  padding-top: 90px;
+  padding: 0;
+  padding-top: 60px;
 }
 
 a {
