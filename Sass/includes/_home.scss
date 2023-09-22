@@ -5,11 +5,11 @@
 /** Paris, belleville **/
 
 .localisation {
-    background: #eaeaea;
+    background: var(--gris__milieu);
     font-size: 15px;
     @include display-center;
     gap: 5px;
-    color: #353535;
+    color: var(--noir);
     
 }
 
@@ -22,7 +22,7 @@
 
 .explorer {
     @include flex-column;  
-    background: whitesmoke;
+    background:var(--gris);
     padding: 39px 50px 57px 50px;  
     text-align: center;    
     justify-content: center;
@@ -85,7 +85,7 @@
 }
 
 &__card {
-    background: #f6f6f6 ;
+    background: var(--gris) ;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -110,7 +110,7 @@
 
 &__icone {
     font-size: 14px;
-    color: #7E7E7E;
+    color: var(--gris__fonce);
     font-size: 24px;
 }
 }
@@ -123,7 +123,7 @@
 /** Restaurants en vignettes **/
 
 .restaurants {
-    background: #f6f6f6;
+    background: var(--gris);
     padding-bottom: 90px;
     
     
@@ -163,8 +163,8 @@
     
     &__nouveau {
         
-        background: #99E2D0;
-        color: #008766 ;
+        background: var(--vert__clair);
+        color: var(--vert__fonce);
         font-weight: 500;
         padding: 7px 15px;
         border-radius: 3px;

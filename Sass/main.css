@@ -7,7 +7,7 @@
 .menus__animation {
   width: 0px;
   height: 75px;
-  background-color: #99e2d0;
+  background-color: var(--vert__clair);
   border-radius: 0 15px 15px 0;
   display: flex;
   justify-content: center;
@@ -276,7 +276,7 @@
 }
 
 .footer {
-  background-color: #353535;
+  background-color: var(--noir);
   display: flex;
   flex-direction: column;
 }
@@ -357,13 +357,13 @@
 }
 /** Paris, belleville **/
 .localisation {
-  background: #eaeaea;
+  background: var(--gris__milieu);
   font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
-  color: #353535;
+  color: var(--noir);
 }
 
 .localisation i {
@@ -375,7 +375,7 @@
 .explorer {
   display: flex;
   flex-direction: column;
-  background: whitesmoke;
+  background: var(--gris);
   padding: 39px 50px 57px 50px;
   text-align: center;
   justify-content: center;
@@ -424,7 +424,7 @@
   padding-right: 20px;
 }
 .fonctionnement__card {
-  background: #f6f6f6;
+  background: var(--gris);
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -446,7 +446,7 @@
 }
 .fonctionnement__icone {
   font-size: 14px;
-  color: #7E7E7E;
+  color: var(--gris__fonce);
   font-size: 24px;
 }
 
@@ -456,7 +456,7 @@
 
 /** Restaurants en vignettes **/
 .restaurants {
-  background: #f6f6f6;
+  background: var(--gris);
   padding-bottom: 90px;
 }
 .restaurants__titre {
@@ -487,8 +487,8 @@
   border-radius: 20px 20px 0 0;
 }
 .restaurants__nouveau {
-  background: #99E2D0;
-  color: #008766;
+  background: var(--vert__clair);
+  color: var(--vert__fonce);
   font-weight: 500;
   padding: 7px 15px;
   border-radius: 3px;
@@ -773,6 +773,12 @@
 :root {
   --rose:#ff79da;
   --violet:#9356dc;
+  --gris:#F6F6F6;
+  --gris__milieu:#EAEAEA;
+  --gris__fonce:#7E7E7E;
+  --noir:#353535;
+  --vert__clair:#99E2D0;
+  --vert__fonce:#008766;
 }
 
 body {
