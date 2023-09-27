@@ -1,6 +1,8 @@
 @use "mixins" as *;
 
-
+*{
+    font-family: 'roboto';
+}
 
 /** Paris, belleville **/
 
@@ -348,11 +350,20 @@
         justify-content: flex-start;
         @include reset-marge;
         padding-bottom: 25px;
-        padding-left: 180px
+        padding-left: 180px;
+        font-weight: bold;
+        font-size: 24px;
+        
+
+    }
+
+    &__menu {
+        justify-content: flex-start;
+        padding-left: 194px;
     }
 
     &__card{
-
+        @include reset-marge;
         width: 322px;
         height: 72px;   
     }
@@ -368,15 +379,18 @@
         @include reset-marge;
         display: flex;
         justify-content: flex-start;
-        padding-left: 162px;
+        padding-left: 180px;
         padding-top: 30px;
         padding-bottom: 28px;
+        font-weight: bold;
+        font-size: 24px;
     }
 
     &__card {
 
         @include reset-marge;     
-        gap: 50px 100px ;       
+        gap: 50px 100px ;
+        padding-left: 15px ;      
 
     }
 

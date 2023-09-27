@@ -4,64 +4,120 @@
   box-sizing: border-box;
 }
 
-/* loader */
+/* loader 
+
+.loader{     
+
+    position: fixed;
+    z-index: 2;         
+    background: rgba(126, 126, 126, 0.5);
+    color: var(--rose);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    i{         
+        position: absolute;         
+        top: 50%;         left: 50%;         
+        transform: translate(-50%,-50%);         
+        transform-origin: 0% 0%;     }     
+        .gros{         
+            animation: rotateLtR 2s infinite;
+            font-size: 60px;      
+        }
+
+        .petit{         
+            animation: rotateRtL 2s infinite;
+            font-size: 20px;
+            color: var(--violet);
+
+        }          
+        animation: loading 2s forwards; }   
+        @keyframes loading{     
+            0%{         opacity: 1;    }     
+            75%{         opacity: 1; z-index: 2;     }     
+            100%{         opacity: 0; z-index: 0;     } 
+        }  
+
+        @keyframes rotateLtR{     
+            0%{         rotate: 0;     }     
+            100%{         rotate: 360deg;     } 
+        } 
+
+        @keyframes rotateRtL{     
+            0%{         rotate: 0;     }     
+            100%{         rotate: -360deg;     } 
+        }     
+
+        */
 .loader {
-  position: fixed;
-  z-index: 2;
-  background: rgba(126, 126, 126, 0.5);
-  color: var(--rose);
   width: 100%;
   height: 100%;
+  display: inline-block;
+  position: fixed;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  z-index: 2;
+  background: rgba(126, 126, 126, 0.5);
   animation: loading 2s forwards;
 }
-.loader i {
+
+.loader::after,
+.loader::before {
+  content: "";
+  box-sizing: border-box;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: 0% 0%;
-}
-.loader .gros {
-  animation: rotateLtR 2s infinite;
-  font-size: 60px;
-}
-.loader .petit {
-  animation: rotateRtL 2s infinite;
-  font-size: 20px;
-  color: var(--violet);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 5px solid;
+  border-color: transparent transparent var(--rose) var(--rose);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
 }
 
+.loader::before {
+  width: 35px;
+  height: 35px;
+  border-color: var(--violet) var(--violet) transparent transparent;
+  animation: rotation 1.5s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 @keyframes loading {
   0% {
     opacity: 1;
   }
-  75% {
+  90% {
     opacity: 1;
     z-index: 2;
   }
   100% {
     opacity: 0;
     z-index: 0;
-  }
-}
-@keyframes rotateLtR {
-  0% {
-    rotate: 0;
-  }
-  100% {
-    rotate: 360deg;
-  }
-}
-@keyframes rotateRtL {
-  0% {
-    rotate: 0;
-  }
-  100% {
-    rotate: -360deg;
   }
 }
 /* Animation Check  */
@@ -221,7 +277,6 @@
 
 .animation__boutons:after {
   background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
-  /*box-shadow: 0px 0px 0 3px rgba(147, 86, 220, 0.2);*/
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   z-index: -1;
   content: "";
@@ -471,6 +526,10 @@
     margin-left: 50px;
   }
 }
+* {
+  font-family: "roboto";
+}
+
 /** Paris, belleville **/
 .localisation {
   background: var(--gris__milieu);
@@ -735,8 +794,16 @@
     padding: 0;
     padding-bottom: 25px;
     padding-left: 180px;
+    font-weight: bold;
+    font-size: 24px;
+  }
+  .fonctionnement__menu {
+    justify-content: flex-start;
+    padding-left: 194px;
   }
   .fonctionnement__card {
+    margin: 0;
+    padding: 0;
     width: 322px;
     height: 72px;
   }
@@ -745,14 +812,17 @@
     padding: 0;
     display: flex;
     justify-content: flex-start;
-    padding-left: 162px;
+    padding-left: 180px;
     padding-top: 30px;
     padding-bottom: 28px;
+    font-weight: bold;
+    font-size: 24px;
   }
   .restaurants__card {
     margin: 0;
     padding: 0;
     gap: 50px 100px;
+    padding-left: 15px;
   }
   .restaurants__infos {
     margin: 0;
