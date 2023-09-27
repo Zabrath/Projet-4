@@ -8,34 +8,34 @@
     border-radius: 40px 40px 0 0;
     padding-bottom: 40px;
     
-
-
-&__photo {
-    height: 300px;
-    object-fit: cover;
-    width: 100%;
-}
-
-&__titre {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    font-family: 'Shrikhand', cursive;
     
-}
-
-&__titre h1 {
-    font-size: 28px;
-    font-weight: normal;
     
-}
-
-&__icone {
-
-    font-size: 24px;
+    &__photo {
+        height: 300px;
+        object-fit: cover;
+        width: 100%;
+    }
     
-}
+    &__titre {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'Shrikhand', cursive;
+        
+    }
+    
+    &__titre h1 {
+        font-size: 28px;
+        font-weight: normal;
+        
+    }
+    
+    &__icone {
+        
+        font-size: 24px;
+        
+    }
 }
 
 
@@ -44,74 +44,74 @@
     padding-left: 13px;
     padding-right: 13px;
     padding-bottom: 35px;
-
-
-
-&__complets {
-    @include flex-column;
-    gap: 15px;
-}
-
-&__titre {
-    font-size: 16px;
-    font-weight: 350;
-    padding-top: 20px;
-    position: relative;
-}
-
-&__titre::after {
-    content: "";
-    width: 35px;
-    height: 5px;
-    position: absolute;
-    bottom: -12px;
-    left: 0;
-}
-
-
-&__cartes {
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     
-}
-
-
-&__infos {
-    padding-left: 15px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-&__plats {
-
-    margin: 5px;
-}
-
-&__details {
-    font-size: 15px;
-    margin: 5px;
-}
-
-&__check {
-    display: flex;
-}
-
-&__prix {
-    font-weight: bold;
-    padding-top: 20px;
-    padding-right: 15px;
     
-}
-
-&__plats, &__details, &__textes {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
+    
+    &__complets {
+        @include flex-column;
+        gap: 15px;
+    }
+    
+    &__titre {
+        font-size: 16px;
+        font-weight: 350;
+        padding-top: 20px;
+        position: relative;
+    }
+    
+    &__titre::after {
+        content: "";
+        width: 35px;
+        height: 5px;
+        position: absolute;
+        bottom: -12px;
+        left: 0;
+    }
+    
+    
+    &__cartes {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        
+    }
+    
+    
+    &__infos {
+        padding-left: 15px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    &__plats {
+        
+        margin: 5px;
+    }
+    
+    &__details {
+        font-size: 15px;
+        margin: 5px;
+    }
+    
+    &__check {
+        display: flex;
+    }
+    
+    &__prix {
+        font-weight: bold;
+        padding-top: 20px;
+        padding-right: 15px;
+        
+    }
+    
+    &__plats, &__details, &__textes {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    
 }
 
 .commander {
@@ -122,35 +122,35 @@
 
 
 @media (min-width: 1440px){
-
-
-.menu {
-margin-left: 200px;
-margin-right: 200px;
-
-&__photo {
-    width: 100%;
-    height: 393px;
-    object-fit: cover;
-}
-
-&__titre {
-    padding-top: 61px;
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-}
-}
-
-.menus {
-    margin-left: 190px;
-    margin-right: 190px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-
-
+    
+    
+    .menu {
+        margin-left: 200px;
+        margin-right: 200px;
+        
+        &__photo {
+            width: 100%;
+            height: 393px;
+            object-fit: cover;
+        }
+        
+        &__titre {
+            padding-top: 61px;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+        }
+    }
+    
+    .menus {
+        margin-left: 190px;
+        margin-right: 190px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    
+    
 }
 

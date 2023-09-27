@@ -4,9 +4,7 @@
 .footer {
     background-color: var(--noir);
     @include flex-column;
-    position: relative;
-    
-    
+    position: relative;   
     
     &__logo {
         padding: 20px;
@@ -33,18 +31,15 @@
     
     &__menu i {
         padding-right: 10px;
-    }
-    
+    }    
 }
 
 .fa-handshake-angle {
     font-size: 12px;
 }
 
-
-
 @media (min-width: 1024px) {
-
+    
     .footer {       
         
         &__logo{
@@ -52,7 +47,7 @@
             justify-content: center;
             font-size: 20px;
         }
-    
+        
         &__menu{
             @include reset-marge; 
             display: flex;
@@ -68,38 +63,38 @@
 
 
 @media (min-width: 1440px){
-
-.footer {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-
-    &__logo{
-        font-size: 18px;
-        @include reset-marge;
-        padding-top: 57px;
-        padding-bottom: 20px;
-        padding-right: 60px;
+    
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        
+        &__logo{
+            font-size: 18px;
+            @include reset-marge;
+            padding-top: 57px;
+            padding-bottom: 20px;
+            padding-right: 60px;
+        }
+        
+        &__menu{
+            gap: 0;
+            @include reset-marge;
+            padding-top: 50px;
+            padding-right: 70px;        
+        }
+        
+        &__menu a {
+            
+            gap: 0;
+            padding-left: 12px;  
+        }
+        
+        &__mentions {       
+            
+            margin-left: 50px;        
+        }
     }
-
-    &__menu{
-        gap: 0;
-        @include reset-marge;
-        padding-top: 50px;
-        padding-right: 70px;        
-    }
-
-    &__menu a {
-
-        gap: 0;
-        padding-left: 12px;  
-    }
-
-    &__mentions {       
-
-        margin-left: 50px;        
-    }
-}
 }
 

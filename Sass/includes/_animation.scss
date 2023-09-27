@@ -9,7 +9,7 @@
 /* loader 
 
 .loader{     
-        
+    
     position: fixed;
     z-index: 2;         
     background: rgba(126, 126, 126, 0.5);
@@ -20,7 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    
     i{         
         position: absolute;         
         top: 50%;         left: 50%;         
@@ -35,7 +35,7 @@
             animation: rotateRtL 2s infinite;
             font-size: 20px;
             color: var(--violet);
-                   
+            
         }          
         animation: loading 2s forwards; }   
         @keyframes loading{     
@@ -43,17 +43,17 @@
             75%{         opacity: 1; z-index: 2;     }     
             100%{         opacity: 0; z-index: 0;     } 
         }  
-
+        
         @keyframes rotateLtR{     
             0%{         rotate: 0;     }     
             100%{         rotate: 360deg;     } 
         } 
-
+        
         @keyframes rotateRtL{     
             0%{         rotate: 0;     }     
             100%{         rotate: -360deg;     } 
         }     
-
+        
         */
         
         .loader {
@@ -64,10 +64,10 @@
             z-index: 2;
             background: rgba(126, 126, 126, 0.5);
             animation: loading 1.5s forwards;                
-          }
-          
-          .loader::after,
-          .loader::before {
+        }
+        
+        .loader::after,
+        .loader::before {
             content: '';  
             box-sizing: border-box;
             position: absolute;
@@ -84,36 +84,36 @@
             box-sizing: border-box;
             animation: rotationBack 1s linear infinite;
             transform-origin: center center;
-          }
-          .loader::before {
+        }
+        .loader::before {
             width: 35px;
             height: 35px;
             border-color: var(--violet) var(--violet) transparent transparent;
             animation: rotation 1.5s linear infinite;
-          }
-              
-          @keyframes rotation {
+        }
+        
+        @keyframes rotation {
             0% {
-              transform: rotate(0deg);
+                transform: rotate(0deg);
             }
             100% {
-              transform: rotate(360deg);
+                transform: rotate(360deg);
             }
-          } 
-          @keyframes rotationBack {
+        } 
+        @keyframes rotationBack {
             0% {
-              transform: rotate(0deg);
+                transform: rotate(0deg);
             }
             100% {
-              transform: rotate(-360deg);
+                transform: rotate(-360deg);
             }
-          }
-          @keyframes loading{     
+        }
+        @keyframes loading{     
             0%{         opacity: 1;  z-index: 2;  }     
             90%{         opacity: 1; z-index: 2;     }     
             100%{         opacity: 0; z-index: 0;     } 
         }  
-              
+        
         
         
         
@@ -129,7 +129,7 @@
             align-items: center;
             @include transition;
             svg {
-                rotate: 0;
+                transform: rotate(0deg);
                 transition: all 0.50s ease-in-out;
             }
         }
@@ -140,7 +140,7 @@
                 width: 59px;
                 
                 svg {
-                    rotate: 360deg;
+                    transform: rotate(360deg);
                     
                 }                
             }
@@ -159,7 +159,7 @@
                 stroke: black;
                 stroke-width: 15px;                
             }
-
+            
             stop {
                 @include transition;
             }            
@@ -168,7 +168,7 @@
                 stop-color: var(--rose);
                 
             }
-
+            
             &:hover #myGradient stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -190,7 +190,7 @@
                 stroke: black;
                 stroke-width: 15px;                
             }
-
+            
             stop {
                 @include transition;
             }            
@@ -198,7 +198,7 @@
             &:hover #myGradient2 stop:first-child{
                 stop-color: var(--rose);                
             }
-
+            
             &:hover #myGradient2 stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -219,7 +219,7 @@
                 stroke: black;
                 stroke-width: 15px;                
             }
-
+            
             stop {
                 transition: all 0.25s ease-in-out;
             }            
@@ -227,7 +227,7 @@
             &:hover #myGradient3 stop:first-child{
                 stop-color: var(--rose);                
             }
-
+            
             &:hover #myGradient3 stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -248,7 +248,7 @@
                 stroke: black;
                 stroke-width: 15px;                
             }
-
+            
             stop {
                 transition: all 0.25s ease-in-out;
             }           
@@ -256,7 +256,7 @@
             &:hover #myGradient4 stop:first-child{
                 stop-color: var(--rose);                
             }
-
+            
             &:hover #myGradient4 stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -283,7 +283,7 @@
         
         .animation__boutons:before {
             content: '';
-            background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
+            background: var(--degrade);
             position: absolute;
             top: -2px;
             left:-2px;
@@ -333,9 +333,9 @@
             50% { background-position: 400% 0; }
             100% { background-position: 0 0; }
         }
-
-
-
+        
+        
+        
         /* Vignettes des restaurants */
         
         
@@ -350,7 +350,7 @@
         
         .restaurants__vignette:before {
             content: '';
-            background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
+            background: var(--degrade);
             position: absolute;
             top: -2px;
             left:-2px;
@@ -397,24 +397,24 @@
             50% { background-position: 400% 0; }
             100% { background-position: 0 0; }
         }
-               
+        
         /*menus restaurants apparition*/
-
+        
         .entrees {
             @include card_appear;
-          }
-          .plats {
+        }
+        .plats {
             @include card_appear;
             & .card {
-              animation-delay: 500ms;
+                animation-delay: 500ms;
             }
-          }
-          .desserts {
+        }
+        .desserts {
             @include card_appear;
             & .card {
-              animation-delay: 1s;
+                animation-delay: 1s;
             }
-          }
+        }
         
         /* Footer */
         

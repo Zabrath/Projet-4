@@ -1,48 +1,47 @@
 @mixin flex-column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @mixin bouton-degrade {
-    background: var(--rose);
-    background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
-    margin: auto;
-    border-radius: 30px;
-    font-size: 16px;
-    font-weight: normal;
+  background: var(--rose);
+  background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
+  margin: auto;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 @mixin reset-marge {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 @mixin display-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin transition {
-    transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 /* mixin pour l'apparition des menus restaurants */
 @mixin card_appear {
-    & .card {
-      animation-name: appear;
-      animation-duration: 1000ms;
-      animation-fill-mode: backwards;
+  & .card {
+    animation-name: appear;
+    animation-duration: 1000ms;
+    animation-fill-mode: backwards;
+  }
+  @keyframes appear {
+    from {
+      transform: translateY(-100px);
+      opacity: 0;
     }
-    @keyframes appear {
-      from {
-        transform: translateY(-100px);
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
   }
-  
+}

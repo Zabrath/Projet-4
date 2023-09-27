@@ -132,7 +132,7 @@
   transition: all 0.25s ease-in-out;
 }
 .menus__animation svg {
-  rotate: 0;
+  transform: rotate(0deg);
   transition: all 0.5s ease-in-out;
 }
 
@@ -140,7 +140,7 @@
   width: 59px;
 }
 .menus__cartes:hover .menus__animation svg {
-  rotate: 360deg;
+  transform: rotate(360deg);
 }
 
 /* Coeurs ce code permet d'animé un code un svg permettant un dégradé. La répétition pourrait être évité avec une autre animation*/
@@ -252,7 +252,7 @@
 
 .animation__boutons:before {
   content: "";
-  background: linear-gradient(30deg, var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose));
+  background: var(--degrade);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -316,7 +316,7 @@
 
 .restaurants__vignette:before {
   content: "";
-  background: linear-gradient(30deg, var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose));
+  background: var(--degrade);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -966,6 +966,7 @@
   --noir:#353535;
   --vert__clair:#99E2D0;
   --vert__fonce:#008766;
+  --degrade:linear-gradient(30deg, var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose), var(--violet), var(--rose));
 }
 
 body {

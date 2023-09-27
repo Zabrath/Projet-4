@@ -63,58 +63,58 @@
     @include flex-column;
     padding-bottom: 68px;   
     
-
-
-&__titre {
-    
-    padding-top: 24px;
-    padding-left: 20px;
-    
-    font-weight: bold;
-    font-size: 26px;
-}
-
-&__menu {
-    
-    @include flex-column;
-    gap: 25px;
-    
-    padding-left: 35px;
-    padding-right: 20px;
     
     
+    &__titre {
+        
+        padding-top: 24px;
+        padding-left: 20px;
+        
+        font-weight: bold;
+        font-size: 26px;
+    }
     
-}
-
-&__card {
-    background: var(--gris) ;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    padding: 10px 0;
-    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    &__menu {
+        
+        @include flex-column;
+        gap: 25px;
+        
+        padding-left: 35px;
+        padding-right: 20px;
+        
+        
+        
+    }
     
+    &__card {
+        background: var(--gris) ;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 10px 0;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        
+        
+        
+    }
     
+    &__numero {
+        background: var(--violet);
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        @include display-center;
+        position: relative;
+        left: -14px;
+    }
     
-}
-
-&__numero {
-    background: var(--violet);
-    color: white;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    @include display-center;
-    position: relative;
-    left: -14px;
-}
-
-&__icone {
-    font-size: 14px;
-    color: var(--gris__fonce);
-    font-size: 24px;
-}
+    &__icone {
+        font-size: 14px;
+        color: var(--gris__fonce);
+        font-size: 24px;
+    }
 }
 
 .fa-store {
@@ -213,192 +213,192 @@
 
 @media (min-width: 1024px){
     
-
-    .localisation {
     
+    .localisation {
+        
         font-size: 13px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;}
-
-    .localisation i {
-        font-size: 18px;
-    }
-
-
-    .explorer {
         
-        &__titre {
-
-            font-size: 40px;            
-        }
-
-        &__texte {
+        .localisation i {
             font-size: 18px;
         }
         
-    }
-
-    .fonctionnement { 
         
-        padding-left: 25px;
-        padding-right: 25px;
-
-        &__titre {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding-bottom: 25px;
-               
-        }
-
-        &__menu {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            gap: 35px;
-     
-        }
-
-        &__card {
-
-            gap: 15px;
-            width: 30%;
+        .explorer {
             
-
-        }
-
-        &__icone {
-
-            font-size: 20px;
+            &__titre {
+                
+                font-size: 40px;            
+            }
+            
+            &__texte {
+                font-size: 18px;
+            }
+            
         }
         
-        &__texte {
-            font-size: 14px;
-            padding-left: 15px;
+        .fonctionnement { 
+            
+            padding-left: 25px;
             padding-right: 25px;
             
+            &__titre {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding-bottom: 25px;
+                
+            }
+            
+            &__menu {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 35px;
+                
+            }
+            
+            &__card {
+                
+                gap: 15px;
+                width: 30%;
+                
+                
+            }
+            
+            &__icone {
+                
+                font-size: 20px;
+            }
+            
+            &__texte {
+                font-size: 14px;
+                padding-left: 15px;
+                padding-right: 25px;
+                
+            }
+            
+            
         }
-
+        
+        
+        
+        .restaurants {
+            padding-bottom: 30px;
+            
+            
+            &__titre {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding-bottom: 25px;
+            }
+            
+            &__card {
+                
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 50px;
+                padding-bottom: 25px;
+                
+            }
+            
+            &__vignette {
+                width: 35%;
+                height: 35%;
+            }
+            
+            &__texte {
+                padding-top: 8px;
+                margin: 0;
+            }
+            
+            &__nom {
+                font-size: 18px;
+                @include reset-marge;
+            }
+            
+            &__localisation {
+                font-size: 17px;
+                @include reset-marge;
+            }
+        }
+    }
     
-    }
-
-
-
-    .restaurants {
-        padding-bottom: 30px;
-        
-
-        &__titre {
-            display: flex;
-            justify-content: center;
-            width: 100%;
-            padding-bottom: 25px;
-        }
-
-        &__card {
-
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 50px;
-            padding-bottom: 25px;
-
-        }
-
-        &__vignette {
-            width: 35%;
-            height: 35%;
-        }
-
-        &__texte {
-            padding-top: 8px;
-            margin: 0;
-        }
-
-        &__nom {
-            font-size: 18px;
-            @include reset-marge;
-        }
-
-        &__localisation {
-            font-size: 17px;
-            @include reset-marge;
-        }
-    }
-}
-
-
-
+    
+    
 @media (min-width: 1440px){
-
-
-.fonctionnement {
-
-    @include reset-marge;
-    padding-bottom: 50px;
-    padding-top: 50px;
-
-    &__titre {
-        display: flex;
-        justify-content: flex-start;
-        @include reset-marge;
-        padding-bottom: 25px;
-        padding-left: 180px;
-        font-weight: bold;
-        font-size: 24px;
         
-
-    }
-
-    &__menu {
-        justify-content: flex-start;
-        padding-left: 194px;
-    }
-
-    &__card{
-        @include reset-marge;
-        width: 322px;
-        height: 72px;   
-    }
-} 
-
-
-
-.restaurants {
-
-    &__titre{
-
-
-        @include reset-marge;
-        display: flex;
-        justify-content: flex-start;
-        padding-left: 180px;
-        padding-top: 30px;
-        padding-bottom: 28px;
-        font-weight: bold;
-        font-size: 24px;
-    }
-
-    &__card {
-
-        @include reset-marge;     
-        gap: 50px 100px ;
-        padding-left: 15px ;      
-
-    }
-
-    &__infos {
-        @include reset-marge;
-        height: 78px;
+        
+        .fonctionnement {
+            
+            @include reset-marge;
+            padding-bottom: 50px;
+            padding-top: 50px;
+            
+            &__titre {
+                display: flex;
+                justify-content: flex-start;
+                @include reset-marge;
+                padding-bottom: 25px;
+                padding-left: 180px;
+                font-weight: bold;
+                font-size: 24px;
+                
+                
+            }
+            
+            &__menu {
+                justify-content: flex-start;
+                padding-left: 194px;
+            }
+            
+            &__card{
+                @include reset-marge;
+                width: 322px;
+                height: 72px;   
+            }
+        } 
+        
+        
+        
+        .restaurants {
+            
+            &__titre{
+                
+                
+                @include reset-marge;
+                display: flex;
+                justify-content: flex-start;
+                padding-left: 180px;
+                padding-top: 30px;
+                padding-bottom: 28px;
+                font-weight: bold;
+                font-size: 24px;
+            }
+            
+            &__card {
+                
+                @include reset-marge;     
+                gap: 50px 100px ;
+                padding-left: 15px ;      
+                
+            }
+            
+            &__infos {
+                @include reset-marge;
+                height: 78px;
+                
+            }
+            
+            &__texte {
+                padding-left: 18px;
+            }
+            
+        }
         
     }
-
-    &__texte {
-        padding-left: 18px;
-    }
-
-}
-
-}
