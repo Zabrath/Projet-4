@@ -56,7 +56,6 @@
 .loader {
   width: 100%;
   height: 100%;
-  display: inline-block;
   position: fixed;
   top: 0;
   z-index: 2;
@@ -110,6 +109,7 @@
 @keyframes loading {
   0% {
     opacity: 1;
+    z-index: 2;
   }
   90% {
     opacity: 1;
@@ -450,6 +450,7 @@
   background-color: var(--noir);
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .footer__logo {
   padding: 20px;

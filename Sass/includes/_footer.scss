@@ -4,6 +4,8 @@
 .footer {
     background-color: var(--noir);
     @include flex-column;
+    position: relative;
+    
     
     
     &__logo {
@@ -38,6 +40,7 @@
 .fa-handshake-angle {
     font-size: 12px;
 }
+
 
 
 @media (min-width: 1024px) {
