@@ -45,10 +45,8 @@
 
 @media (min-width: 1024px) {
 
-    .footer {
+    .footer {       
         
-    
-    
         &__logo{
             display: flex;
             justify-content: center;
@@ -64,10 +62,7 @@
             gap: 35px;
             padding-bottom: 20px;    
         }
-
-
     }
-
 }
 
 
@@ -79,7 +74,6 @@
     flex-direction: row-reverse;
     justify-content: flex-start;
     align-items: center;
-
 
     &__logo{
         font-size: 18px;

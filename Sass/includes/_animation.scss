@@ -63,10 +63,9 @@
             top:0;
             z-index: 2;
             background: rgba(126, 126, 126, 0.5);
-            animation: loading 2s forwards;    
-
-            
+            animation: loading 1.5s forwards;                
           }
+          
           .loader::after,
           .loader::before {
             content: '';  
@@ -138,16 +137,13 @@
         .menus__cartes:hover {
             
             .menus__animation {
-                width: 64px;
+                width: 59px;
                 
                 svg {
                     rotate: 360deg;
                     
-                }
-                
+                }                
             }
-            
-            
         }
         
         
@@ -161,18 +157,18 @@
             path{
                 fill: url(#myGradient);
                 stroke: black;
-                stroke-width: 15px;
-                
+                stroke-width: 15px;                
             }
+
             stop {
                 @include transition;
-            }
-            
+            }            
             
             &:hover #myGradient stop:first-child{
                 stop-color: var(--rose);
                 
             }
+
             &:hover #myGradient stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -192,18 +188,17 @@
             path{
                 fill: url(#myGradient2);
                 stroke: black;
-                stroke-width: 15px;
-                
+                stroke-width: 15px;                
             }
+
             stop {
                 @include transition;
-            }
-            
+            }            
             
             &:hover #myGradient2 stop:first-child{
-                stop-color: var(--rose);
-                
+                stop-color: var(--rose);                
             }
+
             &:hover #myGradient2 stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -211,8 +206,7 @@
             &:hover path {
                 stroke-width: 0;
                 @include transition;
-            }
-            
+            }            
         }
         
         .anim3{
@@ -223,18 +217,17 @@
             path{
                 fill: url(#myGradient3);
                 stroke: black;
-                stroke-width: 15px;
-                
+                stroke-width: 15px;                
             }
+
             stop {
                 transition: all 0.25s ease-in-out;
-            }
-            
+            }            
             
             &:hover #myGradient3 stop:first-child{
-                stop-color: var(--rose);
-                
+                stop-color: var(--rose);                
             }
+
             &:hover #myGradient3 stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -242,8 +235,7 @@
             &:hover path {
                 stroke-width: 0;
                 transition: all 0.25s ease-in-out;
-            }
-            
+            }            
         }
         
         .anim4{
@@ -254,18 +246,17 @@
             path{
                 fill: url(#myGradient4);
                 stroke: black;
-                stroke-width: 15px;
-                
+                stroke-width: 15px;                
             }
+
             stop {
                 transition: all 0.25s ease-in-out;
-            }
-            
+            }           
             
             &:hover #myGradient4 stop:first-child{
-                stop-color: var(--rose);
-                
+                stop-color: var(--rose);                
             }
+
             &:hover #myGradient4 stop:last-child{
                 stop-color: var(--violet);   
             }
@@ -273,8 +264,7 @@
             &:hover path {
                 stroke-width: 0;
                 transition: all 0.25s ease-in-out;
-            }
-            
+            }            
         }
         
         
@@ -398,8 +388,7 @@
         .restaurants__vignette:hover:after{
             
             background: white;
-            @include transition;
-            
+            @include transition;            
         } 
         
         

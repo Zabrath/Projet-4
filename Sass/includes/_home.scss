@@ -179,10 +179,8 @@
     
     
     &__infos {
-        display: flex;
+        @include display-center;
         flex-direction: row;
-        align-items: center;
-        justify-items: center;
         justify-content: space-between;
     }
     
@@ -329,9 +327,6 @@
             @include reset-marge;
         }
     }
-
-
-
 }
 
 
