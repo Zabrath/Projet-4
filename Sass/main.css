@@ -1,8 +1,69 @@
 @charset "UTF-8";
+/* mixin pour l'apparition des menus restaurants */
 * {
   box-sizing: border-box;
 }
 
+/* loader */
+.loader {
+  position: fixed;
+  z-index: 2;
+  background: rgba(126, 126, 126, 0.5);
+  color: var(--rose);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: loading 2s forwards;
+}
+.loader i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: 0% 0%;
+}
+.loader .gros {
+  animation: rotateLtR 2s infinite;
+  font-size: 60px;
+}
+.loader .petit {
+  animation: rotateRtL 2s infinite;
+  font-size: 20px;
+  color: var(--violet);
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
+@keyframes rotateLtR {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+@keyframes rotateRtL {
+  0% {
+    rotate: 0;
+  }
+  100% {
+    rotate: -360deg;
+  }
+}
 /* Animation Check  */
 .menus__animation {
   width: 0px;
@@ -188,7 +249,7 @@
     background-position: 0 0;
   }
 }
-/* Vignettes */
+/* Vignettes des restaurants */
 .restaurants__vignette {
   border: none;
   outline: none;
@@ -251,6 +312,61 @@
     background-position: 0 0;
   }
 }
+/*menus restaurants apparition*/
+.entrees .card {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.plats .card {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.plats .card {
+  animation-delay: 500ms;
+}
+
+.desserts .card {
+  animation-name: appear;
+  animation-duration: 1000ms;
+  animation-fill-mode: backwards;
+}
+@keyframes appear {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.desserts .card {
+  animation-delay: 1s;
+}
+
 /* Footer */
 .footer__menu a:hover {
   color: var(--rose);

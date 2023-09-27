@@ -26,3 +26,23 @@
 @mixin transition {
     transition: all 0.25s ease-in-out;
 }
+
+/* mixin pour l'apparition des menus restaurants */
+@mixin card_appear {
+    & .card {
+      animation-name: appear;
+      animation-duration: 1000ms;
+      animation-fill-mode: backwards;
+    }
+    @keyframes appear {
+      from {
+        transform: translateY(-100px);
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  

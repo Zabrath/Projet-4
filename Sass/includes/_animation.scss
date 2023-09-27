@@ -6,303 +6,370 @@
     box-sizing: border-box;
 }
 
-/* Animation Check  */
+/* loader */
 
-.menus__animation{
-    width: 0px;
-    height: 75px;
-    background-color:var(--vert__clair);
-    border-radius: 0 15px 15px 0;
+.loader{     
+        
+    position: fixed;
+    z-index: 2;         
+    background: rgba(126, 126, 126, 0.5);
+    color: var(--rose);
+    width: 100%;
+    height: 100%;
+    top: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    @include transition;
-    svg {
-        rotate: 0;
-        transition: all 0.50s ease-in-out;
-    }
-}
+    justify-content: center;
 
-    .menus__cartes:hover {
+    i{         
+        position: absolute;         
+        top: 50%;         left: 50%;         
+        transform: translate(-50%,-50%);         
+        transform-origin: 0% 0%;     }     
+        .gros{         
+            animation: rotateLtR 2s infinite;
+            font-size: 60px;      
+        }
+        
+        .petit{         
+            animation: rotateRtL 2s infinite;
+            font-size: 20px;
+            color: var(--violet);
+                   
+        }          
+        animation: loading 2s forwards; }   
+        @keyframes loading{     
+            0%{         opacity: 1;    }     
+            75%{         opacity: 1; z-index: 2;     }     
+            100%{         opacity: 0; z-index: 0;     } 
+        }  
 
-        .menus__animation {
-            width: 64px;
+        @keyframes rotateLtR{     
+            0%{         rotate: 0;     }     
+            100%{         rotate: 360deg;     } 
+        } 
 
+        @keyframes rotateRtL{     
+            0%{         rotate: 0;     }     
+            100%{         rotate: -360deg;     } 
+        }     
+
+
+        
+        
+        /* Animation Check  */
+        
+        .menus__animation{
+            width: 0px;
+            height: 75px;
+            background-color:var(--vert__clair);
+            border-radius: 0 15px 15px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include transition;
             svg {
-                rotate: 360deg;
-
+                rotate: 0;
+                transition: all 0.50s ease-in-out;
+            }
+        }
+        
+        .menus__cartes:hover {
+            
+            .menus__animation {
+                width: 64px;
+                
+                svg {
+                    rotate: 360deg;
+                    
+                }
+                
+            }
+            
+            
+        }
+        
+        
+        /* Coeurs ce code permet d'animé un code un svg permettant un dégradé. La répétition pourrait être évité avec une autre animation*/
+        
+        .anim{
+            width: 22px;
+            overflow: visible;
+            cursor: pointer;
+            
+            path{
+                fill: url(#myGradient);
+                stroke: black;
+                stroke-width: 15px;
+                
+            }
+            stop {
+                @include transition;
+            }
+            
+            
+            &:hover #myGradient stop:first-child{
+                stop-color: var(--rose);
+                
+            }
+            &:hover #myGradient stop:last-child{
+                stop-color: var(--violet);   
+            }
+            
+            &:hover path {
+                stroke-width: 0;
+                @include transition;
             }
             
         }
-
-
-    }
-
-
-/* Coeurs ce code permet d'animé un code un svg permettant un dégradé. La répétition pourrait être évité avec une autre animation*/
-
-.anim{
-    width: 22px;
-    overflow: visible;
-    cursor: pointer;
-    
- path{
-    fill: url(#myGradient);
-    stroke: black;
-    stroke-width: 15px;
-
-}
- stop {
-    @include transition;
-}
-
-
-&:hover #myGradient stop:first-child{
-    stop-color: var(--rose);
-
-}
-&:hover #myGradient stop:last-child{
-    stop-color: var(--violet);   
-}
-
-&:hover path {
-    stroke-width: 0;
-    @include transition;
-}
-
-}
-
-.anim2{
-    width: 22px;
-    overflow: visible;
-    cursor: pointer;
-    
- path{
-    fill: url(#myGradient2);
-    stroke: black;
-    stroke-width: 15px;
-
-}
- stop {
-    @include transition;
-}
-
-
-&:hover #myGradient2 stop:first-child{
-    stop-color: var(--rose);
-
-}
-&:hover #myGradient2 stop:last-child{
-    stop-color: var(--violet);   
-}
-
-&:hover path {
-    stroke-width: 0;
-    @include transition;
-}
-
-}
-
-.anim3{
-    width: 22px;
-    overflow: visible;
-    cursor: pointer;
-    
- path{
-    fill: url(#myGradient3);
-    stroke: black;
-    stroke-width: 15px;
-
-}
- stop {
-    transition: all 0.25s ease-in-out;
-}
-
-
-&:hover #myGradient3 stop:first-child{
-    stop-color: var(--rose);
-
-}
-&:hover #myGradient3 stop:last-child{
-    stop-color: var(--violet);   
-}
-
-&:hover path {
-    stroke-width: 0;
-    transition: all 0.25s ease-in-out;
-}
-
-}
-
-.anim4{
-    width: 22px;
-    overflow: visible;
-    cursor: pointer;
-    
- path{
-    fill: url(#myGradient4);
-    stroke: black;
-    stroke-width: 15px;
-
-}
- stop {
-    transition: all 0.25s ease-in-out;
-}
-
-
-&:hover #myGradient4 stop:first-child{
-    stop-color: var(--rose);
-
-}
-&:hover #myGradient4 stop:last-child{
-    stop-color: var(--violet);   
-}
-
-&:hover path {
-    stroke-width: 0;
-    transition: all 0.25s ease-in-out;
-}
-
-}
-
-
-/* boutons  */
-
-
-
-.animation__boutons {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 30px;
-}
-
-.animation__boutons:before {
-    content: '';
-    background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 30s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 30px;
-}
-
-
-.animation__boutons:active:after {
-    background: transparent;
-}
-
-.animation__boutons:hover:before {
-    opacity: 1;
-}
-
-.animation__boutons:after {
-    background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
-    /*box-shadow: 0px 0px 0 3px rgba(147, 86, 220, 0.2);*/
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 30px;
-}
-
-.animation__boutons:hover:after{
-
-    background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
-    @include transition;
-
-} 
-
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-/* Vignettes */
-
-
-.restaurants__vignette {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 30px;
-}
-
-.restaurants__vignette:before {
-    content: '';
-    background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 30s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 30px;
-}
-
-.restaurants__vignette:active:after {
-    background: transparent;
-}
-
-.restaurants__vignette:hover:before {
-    opacity: 1;
-}
-
-.restaurants__vignette:after {
-    background: whitesmoke;
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border-radius: 30px;
-}
-
-.restaurants__vignette:hover:after{
-
-    background: white;
-    @include transition;
-
-} 
-
-
-@keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
-}
-
-
-
-/* Footer */
-
-.footer__menu a:hover {
-
-    color: var(--rose);
-    @include transition;
-
-}
+        
+        .anim2{
+            width: 22px;
+            overflow: visible;
+            cursor: pointer;
+            
+            path{
+                fill: url(#myGradient2);
+                stroke: black;
+                stroke-width: 15px;
+                
+            }
+            stop {
+                @include transition;
+            }
+            
+            
+            &:hover #myGradient2 stop:first-child{
+                stop-color: var(--rose);
+                
+            }
+            &:hover #myGradient2 stop:last-child{
+                stop-color: var(--violet);   
+            }
+            
+            &:hover path {
+                stroke-width: 0;
+                @include transition;
+            }
+            
+        }
+        
+        .anim3{
+            width: 22px;
+            overflow: visible;
+            cursor: pointer;
+            
+            path{
+                fill: url(#myGradient3);
+                stroke: black;
+                stroke-width: 15px;
+                
+            }
+            stop {
+                transition: all 0.25s ease-in-out;
+            }
+            
+            
+            &:hover #myGradient3 stop:first-child{
+                stop-color: var(--rose);
+                
+            }
+            &:hover #myGradient3 stop:last-child{
+                stop-color: var(--violet);   
+            }
+            
+            &:hover path {
+                stroke-width: 0;
+                transition: all 0.25s ease-in-out;
+            }
+            
+        }
+        
+        .anim4{
+            width: 22px;
+            overflow: visible;
+            cursor: pointer;
+            
+            path{
+                fill: url(#myGradient4);
+                stroke: black;
+                stroke-width: 15px;
+                
+            }
+            stop {
+                transition: all 0.25s ease-in-out;
+            }
+            
+            
+            &:hover #myGradient4 stop:first-child{
+                stop-color: var(--rose);
+                
+            }
+            &:hover #myGradient4 stop:last-child{
+                stop-color: var(--violet);   
+            }
+            
+            &:hover path {
+                stroke-width: 0;
+                transition: all 0.25s ease-in-out;
+            }
+            
+        }
+        
+        
+        /* boutons  */
+        
+        
+        
+        .animation__boutons {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 30px;
+        }
+        
+        .animation__boutons:before {
+            content: '';
+            background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 30s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 30px;
+        }
+        
+        
+        .animation__boutons:active:after {
+            background: transparent;
+        }
+        
+        .animation__boutons:hover:before {
+            opacity: 1;
+        }
+        
+        .animation__boutons:after {
+            background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
+            /*box-shadow: 0px 0px 0 3px rgba(147, 86, 220, 0.2);*/
+            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 30px;
+        }
+        
+        .animation__boutons:hover:after{
+            
+            background: linear-gradient(162deg, var(--rose) 0%, var(--violet) 100%);
+            @include transition;
+            
+        } 
+        
+        
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+        
+        /* Vignettes des restaurants */
+        
+        
+        .restaurants__vignette {
+            border: none;
+            outline: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 0;
+            border-radius: 30px;
+        }
+        
+        .restaurants__vignette:before {
+            content: '';
+            background: linear-gradient(30deg,  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose),  var(--violet), var(--rose));
+            position: absolute;
+            top: -2px;
+            left:-2px;
+            background-size: 400%;
+            z-index: -1;
+            filter: blur(5px);
+            width: calc(100% + 4px);
+            height: calc(100% + 4px);
+            animation: glowing 30s linear infinite;
+            opacity: 0;
+            transition: opacity .3s ease-in-out;
+            border-radius: 30px;
+        }
+        
+        .restaurants__vignette:active:after {
+            background: transparent;
+        }
+        
+        .restaurants__vignette:hover:before {
+            opacity: 1;
+        }
+        
+        .restaurants__vignette:after {
+            background: whitesmoke;
+            z-index: -1;
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            border-radius: 30px;
+        }
+        
+        .restaurants__vignette:hover:after{
+            
+            background: white;
+            @include transition;
+            
+        } 
+        
+        
+        @keyframes glowing {
+            0% { background-position: 0 0; }
+            50% { background-position: 400% 0; }
+            100% { background-position: 0 0; }
+        }
+               
+        /*menus restaurants apparition*/
+
+        .entrees {
+            @include card_appear;
+          }
+          .plats {
+            @include card_appear;
+            & .card {
+              animation-delay: 500ms;
+            }
+          }
+          .desserts {
+            @include card_appear;
+            & .card {
+              animation-delay: 1s;
+            }
+          }
+        
+        /* Footer */
+        
+        .footer__menu a:hover {
+            
+            color: var(--rose);
+            @include transition;
+            
+        }
