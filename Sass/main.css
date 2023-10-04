@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-/* loader 
-
+/* loader1 */ /*
 .loader{     
 
     position: fixed;
@@ -51,8 +50,8 @@
             0%{         rotate: 0;     }     
             100%{         rotate: -360deg;     } 
         }     
-
         */
+/* Loader2 */
 .loader {
   width: 100%;
   height: 100%;
@@ -527,10 +526,6 @@
     margin-left: 50px;
   }
 }
-* {
-  font-family: "roboto";
-}
-
 /** Paris, belleville **/
 .localisation {
   background: var(--gris__milieu);
@@ -887,6 +882,7 @@
   position: absolute;
   bottom: -12px;
   left: 0;
+  background-color: var(--vert__clair);
 }
 .menus__cartes {
   background-color: white;
