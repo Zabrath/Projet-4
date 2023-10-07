@@ -421,12 +421,6 @@
   animation-delay: 1s;
 }
 
-/* Footer */
-.footer__menu a:hover {
-  color: var(--rose);
-  transition: all 0.25s ease-in-out;
-}
-
 .header {
   background: white;
   height: 60px;
@@ -527,14 +521,27 @@
   }
 }
 /** Paris, belleville **/
+input {
+  border: none;
+  background: var(--gris__milieu);
+  font-size: 20px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
 .localisation {
   background: var(--gris__milieu);
-  font-size: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5px;
   color: var(--noir);
+  position: relative;
+  padding: 15px;
 }
 
 .localisation i {
@@ -704,7 +711,7 @@
     line-height: normal;
   }
   .localisation i {
-    font-size: 18px;
+    font-size: 24px;
   }
   .explorer__titre {
     font-size: 40px;

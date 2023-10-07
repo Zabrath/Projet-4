@@ -4,12 +4,24 @@
 
 /** Paris, belleville **/
 
+input {
+    
+    border: none;
+    background: var(--gris__milieu);
+    font-size: 20px;
+    width: 170px;
+    @include display-center;
+    @include reset-marge;
+
+}
+
 .localisation {
     background: var(--gris__milieu);
-    font-size: 15px;
     @include display-center;
     gap: 5px;
     color: var(--noir);
+    position: relative;
+    padding: 15px;
     
 }
 
@@ -220,7 +232,7 @@
         line-height: normal;}
         
         .localisation i {
-            font-size: 18px;
+            font-size: 24px;
         }
         
         
